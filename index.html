@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Federico Volpintesta | Full Stack Developer</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Aural premium glows -->
+    <div class="glowing-blob blob-1"></div>
+    <div class="glowing-blob blob-2"></div>
+    <div class="glowing-blob blob-3"></div>
 
     <nav>
         <div class="logo-container">
@@ -23,28 +28,31 @@
     <header class="hero">
         <div class="hero-text">
             <span class="badge">Disponible para entrevistas</span>
-            <h1>Soluciones <br><span>Tecnológicas</span></h1>
-            <p>Full Stack Developer con experiencia en digitalización de procesos operativos y consumo de APIs modernas.</p>
+            <h1>Soluciones Web <br><span>Ultra-Eficientes</span></h1>
+            <p>Full Stack Developer especializado en la digitalización de procesos operativos y la creación de plataformas de alto impacto para la industria hotelera.</p>
             <div class="hero-buttons">
                 <a href="#proyectos" class="btn-primary">Ver Portafolio</a>
-                <a href="https://wa.me/5493424624840" class="btn-secondary">WhatsApp</a>
+                <a href="https://wa.me/5493424624840" target="_blank" class="btn-secondary">WhatsApp</a>
             </div>
         </div>
-        <div class="hero-image">
-            <img src="img/perfil.png" alt="Federico Volpintesta">
+        <div class="hero-image-wrapper">
+            <div class="hero-image-glow"></div>
+            <div class="hero-image">
+                <img src="img/perfil.png" alt="Federico Volpintesta">
+            </div>
         </div>
     </header>
 
     <section id="proyectos" class="container">
         <div class="section-header">
             <h2>Proyectos <span>Seleccionados</span></h2>
-            <p>Software funcional diseñado para resolver problemas de gestión y consumo de datos.</p>
+            <p>Casos reales de digitalización y automatización de alto impacto en la hotelería.</p>
         </div>
 
         <div class="project-grid">
             <div class="project-card">
                 <div class="project-content">
-                    <span class="tag">Destacado / Hotelería</span>
+                    <span class="tag">Caso Real / Hotelería</span>
                     <h3>Lost & Found - Los Pinos Resort</h3>
                     <p>Optimización del flujo de objetos hallados. Genera Actas de Entrega Legales en PDF automáticamente, profesionalizando el servicio.</p>
                     <a href="https://github.com/federicovolpintesta-eng/lostfound-hotel" target="_blank" class="link-btn">Explorar Repositorio →</a>
@@ -53,10 +61,10 @@
 
             <div class="project-card">
                 <div class="project-content">
-                    <span class="tag">API Integration / UX</span>
-                    <h3>Rick & Morty Explorer</h3>
-                    <p>Aplicación dinámica que consume la API oficial de Rick & Morty. Implementa filtrado de personajes y diseño responsivo.</p>
-                    <a href="https://github.com/federicovolpintesta-eng/rick-morty-react" target="_blank" class="link-btn">Ver en GitHub →</a>
+                    <span class="tag">Caso Real / Hotelería</span>
+                    <h3>ReservaSpa - Los Pinos Resort</h3>
+                    <p>Sistema premium de reservas y gestión de turnos para el spa del hotel. Cuenta con panel administrativo interactivo, grilla de horarios inteligente y persistencia en tiempo real con Supabase.</p>
+                    <a href="https://github.com/federicovolpintesta-eng/reservaspa" target="_blank" class="link-btn">Explorar Repositorio →</a>
                 </div>
             </div>
         </div>
@@ -69,10 +77,10 @@
         <div class="contact-center-wrapper">
             <div class="contact-card-v2">
                 <h3>¿Listo para tu próximo paso técnico?</h3>
-                <p class="subtitle">Estoy a un clic de distancia para coordinar una entrevista.</p>
+                <p class="subtitle">Estoy disponible para coordinar una entrevista y conversar sobre cómo aportar valor a tu equipo.</p>
                 
                 <div class="contact-items">
-                    <a href="https://wa.me/5493424624840" class="contact-item">
+                    <a href="https://wa.me/5493424624840" target="_blank" class="contact-item">
                         <span>TELÉFONO / WHATSAPP</span>
                         +54 9 342-4624840
                     </a>
@@ -94,9 +102,10 @@
     </footer>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
-        ScrollReveal().reveal('.hero-text', { delay: 200, origin: 'left', distance: '50px' });
-        ScrollReveal().reveal('.hero-image', { delay: 400, origin: 'right', distance: '50px' });
-        ScrollReveal().reveal('.project-card', { delay: 200, interval: 200, translateY: 50 });
+        ScrollReveal().reveal('.hero-text', { delay: 200, origin: 'left', distance: '50px', duration: 1000 });
+        ScrollReveal().reveal('.hero-image-wrapper', { delay: 400, origin: 'right', distance: '50px', duration: 1000 });
+        ScrollReveal().reveal('.project-card', { delay: 200, interval: 200, translateY: 50, duration: 1000 });
+        ScrollReveal().reveal('.contact-card-v2', { delay: 200, translateY: 50, duration: 1000 });
     </script>
 </body>
 </html>
