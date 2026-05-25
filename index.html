@@ -143,24 +143,24 @@
             <div class="calculator-outputs">
                 <div class="output-grid">
                     <div class="output-card">
-                        <span class="output-label">TIEMPO OPERATIVO DEVUELTO</span>
-                        <div class="output-value" id="roiHours">174 hrs/mes</div>
-                        <p class="output-desc">Reducción drástica del trabajo manual y llamadas en la recepción.</p>
+                        <span class="output-label">TIEMPO DE RECEPCIÓN AHORRADO</span>
+                        <div class="output-value" id="roiHours">50 hrs/mes</div>
+                        <p class="output-desc">Horas devueltas al personal al automatizar el proceso de reserva en línea (estimado en 5 min por turno).</p>
                     </div>
                     <div class="output-card">
                         <span class="output-label">CONSUMO DE PAPEL EVITADO</span>
-                        <div class="output-value" id="roiPaper">870 folios/mes</div>
-                        <p class="output-desc">Digitalización de fichas médicas, reportes y registros de entrega.</p>
+                        <div class="output-value" id="roiPaper">600 folios/mes</div>
+                        <p class="output-desc">Reducción directa de papel al digitalizar las planillas de turnos y actas de objetos perdidos.</p>
                     </div>
                     <div class="output-card highlighted">
-                        <span class="output-label">INCREMENTO ESTIMADO EN FACTURACIÓN</span>
-                        <div class="output-value" id="roiRevenue">USD $3,150/mes</div>
-                        <p class="output-desc">Basado en un incremento real del 35% de reservas de spa al habilitar el canal online.</p>
+                        <span class="output-label">PREVENCIÓN DE DUPLICADOS Y SOBREVENTA</span>
+                        <div class="output-value" id="roiRevenue">100%</div>
+                        <p class="output-desc">Garantía absoluta de asignación única de terapeutas y cabinas mediante restricciones de base de datos.</p>
                     </div>
                     <div class="output-card">
-                        <span class="output-label">MARGEN DE ERROR EN SEGURIDAD</span>
-                        <div class="output-value accent">0.0%</div>
-                        <p class="output-desc">Trazabilidad legal blindada bajo actas PDF automatizadas.</p>
+                        <span class="output-label">INTEGRIDAD DE REGISTROS</span>
+                        <div class="output-value accent">100%</div>
+                        <p class="output-desc">Persistencia en tiempo real en Supabase, eliminando el riesgo de extravío de fichas físicas.</p>
                     </div>
                 </div>
             </div>
@@ -219,9 +219,9 @@
                 <div class="timeline-body">
                     <p class="timeline-intro">Responsable de liderar la transformación digital de la operativa interna, el desarrollo e integración de sistemas y la administración de bases de datos operativas de producción.</p>
                     <ul class="timeline-bullets">
-                        <li><strong>Desarrollo de ReservaSpa:</strong> Automatización total de la agenda del spa, integrando el flujo de reserva con el backend administrativo, aumentando un 35% las ventas de servicios.</li>
-                        <li><strong>Ingeniería de Lost & Found:</strong> Creación del sistema de registro y actas legales de entrega digitales en PDF, reduciendo al 0% el error logístico y eliminando completamente el uso de papel en Ama de Llaves.</li>
-                        <li><strong>Optimización y Tiempos de Carga:</strong> Migración de estructuras de almacenamiento a Supabase DB con políticas seguras de autenticación y persistencia relacional optimizada, bajando auditorías un 50%.</li>
+                        <li><strong>Desarrollo de ReservaSpa:</strong> Implementación del sistema web de agendamiento y turnos del spa, centralizando el control de disponibilidad de cabinas y terapeutas del resort.</li>
+                        <li><strong>Ingeniería de Lost & Found:</strong> Creación del software de inventariado y generación automática de actas de entrega en formato digital PDF, mejorando la velocidad de búsqueda de objetos en depósito.</li>
+                        <li><strong>Optimización e Integración:</strong> Migración y estructuración de bases de datos relacionales en Supabase con políticas de acceso seguro y generación dinámica de documentos.</li>
                     </ul>
                 </div>
             </div>
@@ -290,9 +290,9 @@
                 desc: "Sistema web de reserva a medida desarrollado para Los Pinos Resort. Sincroniza en tiempo real la reserva del huésped con la disponibilidad del terapeuta y cabina libre.",
                 tags: ["React.js", "Node.js", "PostgreSQL", "Supabase DB", "Realtime Persistence", "Responsive UI"],
                 metrics: [
-                    "Incremento comprobado del 35% en ventas de servicios del Spa.",
-                    "0% sobreventas de terapeutas a través de lógica de base de datos relacional.",
-                    "100% de los turnos digitalizados y visibles para administración y gobernanta."
+                    "Sincronización instantánea de reservas, optimizando la asignación de terapeutas y recursos del hotel.",
+                    "0% de sobreventas de terapeutas o cabinas mediante lógica de base de datos relacional.",
+                    "Visualización y control de agendas en línea para administración y recepción."
                 ]
             },
             lost: {
@@ -306,9 +306,9 @@
                 desc: "Plataforma administrativa blindada que automatiza el registro de artículos encontrados, controla su ubicación en depósito y emite actas de entrega legales en formato PDF autogenerado.",
                 tags: ["JavaScript (ES6+)", "Supabase Auth/DB", "jsPDF API", "Responsive CSS Grid", "Automated PDFs"],
                 metrics: [
-                    "Reducción al 0% en el margen de error de devoluciones y reclamos.",
-                    "Cero uso de papel en Recepción y Gobernanta del hotel.",
-                    "Optimización del 50% en tiempos de auditoría de seguridad del resort."
+                    "Trazabilidad completa desde el hallazgo del objeto hasta su devolución legal al huésped.",
+                    "Cero uso de planillas manuscritas redundantes en Ama de Llaves y Gobernanta.",
+                    "Generación inmediata de actas de entrega digitales en PDF autogeneradas."
                 ]
             }
         };
@@ -375,16 +375,13 @@
             valReservas.textContent = `${reservas.toLocaleString('es-ES')} turnos`;
             valHabitaciones.textContent = `${habs} habs`;
 
-            // Operational metrics formulas
-            const hoursSaved = Math.round((reservas * 0.25) + (habs * 0.3 * 30));
-            const paperSheets = Math.round((reservas * 1.2) + (habs * 1.5 * 30));
+            // Realistic operational math formulas
+            const hoursSaved = Math.round(reservas * 5 / 60); // 5 min per reservation saved
+            const paperSheets = Math.round(reservas * 1); // 1 printed booking ticket saved per booking
             
-            // Average spa ticket: 20 USD. Boost: 35%
-            const revenueBoost = Math.round(reservas * 20 * 0.35);
-
             roiHours.textContent = `${hoursSaved} hrs/mes`;
             roiPaper.textContent = `${paperSheets.toLocaleString('es-ES')} folios/mes`;
-            roiRevenue.textContent = `USD $${revenueBoost.toLocaleString('es-ES')}/mes`;
+            roiRevenue.textContent = `100%`; // Concurrency block efficiency is always absolute due to DB constraints
         }
 
         rangeReservas.addEventListener('input', calculateROI);
