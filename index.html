@@ -3,170 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Federico Volpintesta | Desarrollador de Soluciones de Alto Impacto</title>
-    <meta name="description" content="Portafolio interactivo de Federico Volpintesta, Full Stack Developer enfocado en resolver ineficiencias de negocio y digitalización operativa en hotelería.">
+    <title>Federico Volpintesta | Full Stack Developer & Digitalización Operativa</title>
+    <meta name="description" content="Portafolio profesional de Federico Volpintesta, Full Stack Developer. Digitalización de flujos operativos y soluciones de software de alto impacto con retorno de inversión medible.">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 </head>
-<body class="theme-violet">
+<body>
 
-    <!-- Telemetry Ticker -->
-    <div class="ticker-container" id="tickerContainer">
-        <div class="ticker-wrapper">
-            <div class="ticker-slide">
-                <span class="ticker-item"><span class="ticker-dot green"></span> SISTEMA: OPERACIONAL</span>
-                <span class="ticker-item"><span class="ticker-dot violet"></span> RESERVASPA EN PRODUCCIÓN: +35% VENTAS</span>
-                <span class="ticker-item"><span class="ticker-dot cyan"></span> LOST & FOUND: 100% DIGITALIZADO</span>
-                <span class="ticker-item"><span class="ticker-dot green"></span> MARGEN DE ERROR DE DEVOLUCIONES: 0.0%</span>
-                <span class="ticker-item"><span class="ticker-dot violet"></span> TIEMPOS DE AUDITORÍA: -50%</span>
-                <span class="ticker-item"><span class="ticker-dot cyan"></span> AHORRO DE PAPEL EN HOTEL: 100% REGISTRO DIGITAL</span>
-            </div>
-            <div class="ticker-slide">
-                <span class="ticker-item"><span class="ticker-dot green"></span> SISTEMA: OPERACIONAL</span>
-                <span class="ticker-item"><span class="ticker-dot violet"></span> RESERVASPA EN PRODUCCIÓN: +35% VENTAS</span>
-                <span class="ticker-item"><span class="ticker-dot cyan"></span> LOST & FOUND: 100% DIGITALIZADO</span>
-                <span class="ticker-item"><span class="ticker-dot green"></span> MARGEN DE ERROR DE DEVOLUCIONES: 0.0%</span>
-                <span class="ticker-item"><span class="ticker-dot violet"></span> TIEMPOS DE AUDITORÍA: -50%</span>
-                <span class="ticker-item"><span class="ticker-dot cyan"></span> AHORRO DE PAPEL EN HOTEL: 100% REGISTRO DIGITAL</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- Glowing Premium Blobs -->
-    <div class="glowing-blob blob-1"></div>
-    <div class="glowing-blob blob-2"></div>
-    <div class="glowing-blob blob-3"></div>
-
-    <!-- Floating Dashboard Controls -->
-    <div class="dashboard-controls" id="dashboardControls">
-        <div class="control-group">
-            <span class="control-label">AURA</span>
-            <button class="theme-btn active" data-theme="violet" aria-label="Tema Violeta" title="Electric Violet"></button>
-            <button class="theme-btn" data-theme="cyan" aria-label="Tema Celeste" title="Obsidian Cyan"></button>
-            <button class="theme-btn" data-theme="mint" aria-label="Tema Menta" title="Emerald Mint"></button>
-        </div>
-        <div class="control-divider"></div>
-        <div class="control-group">
-            <button class="audio-btn" id="audioToggleBtn" aria-label="Activar/Silenciar Audio" title="Efectos de Sonido Sintetizados">
-                <svg id="volumeIcon" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-                    <path d="M15.54 8.46a5 5 0 0 1 0 7.07" class="sound-wave wave-1"></path>
-                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14" class="sound-wave wave-2"></path>
-                </svg>
-                <span class="audio-status-label">MUTED</span>
-            </button>
-        </div>
-    </div>
+    <!-- Subtle Premium Background Lines -->
+    <div class="elegant-bg-lines"></div>
 
     <nav>
         <div class="logo-container">
-            <img src="img/logo.png" alt="Federico Volpintesta" class="main-logo">
-            <span class="system-status">
-                <span class="status-pulse"></span>
-                LIVE CORE v2.6
-            </span>
+            <img src="img/logo.png" alt="Federico Volpintesta Logo" class="main-logo">
+            <div class="system-indicator">
+                <span class="status-dot"></span>
+                <span>LOS PINOS RESORT &bull; SISTEMAS ACTIVOS</span>
+            </div>
         </div>
         <ul>
-            <li><a href="#solucionador" class="nav-link-sound">Simulador</a></li>
-            <li><a href="#calculadora" class="nav-link-sound">Calculadora ROI</a></li>
-            <li><a href="#terminal" class="nav-link-sound">Fede-CLI</a></li>
-            <li><a href="#cv" class="nav-link-sound">Log Experiencia</a></li>
-            <li><a href="#contacto" class="nav-btn nav-link-sound">Resolver Problemas →</a></li>
+            <li><a href="#casos">Casos de Éxito</a></li>
+            <li><a href="#roi">Estimador de ROI</a></li>
+            <li><a href="#filosofia">Filosofía</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#contacto" class="nav-btn">Conectar →</a></li>
         </ul>
     </nav>
 
     <!-- HERO SECTION -->
     <header class="hero">
-        <div class="hero-text">
-            <div class="badge-container">
-                <span class="badge">Especialista en Digitalización</span>
-                <span class="badge-status">Los Pinos Resort (5★)</span>
-            </div>
-            <h1>Transformando <br><span>Ineficiencias</span> en Rendimiento</h1>
-            <p>Full Stack Developer enfocado en erradicar cuellos de botella operativos mediante arquitecturas web robustas, automatización de flujos críticos y persistencia segura en tiempo real.</p>
+        <div class="hero-content">
+            <div class="meta-label">FULL STACK DEVELOPER &bull; ESPECIALISTA EN DIGITALIZACIÓN</div>
+            <h1>Ingeniería de Software orientada a <span>Resolver Problemas</span> de Negocio.</h1>
+            <p class="hero-lead">Diseño e implemento arquitecturas web de alto rendimiento que digitalizan flujos operativos y erradican cuellos de botella reales en la industria hotelera de primer nivel.</p>
             
-            <div class="live-diagnostics" id="liveDiagnostics">
-                <div class="diagnostics-header">
-                    <span class="led"></span>
-                    <span class="title">TELEMETRÍA DE CASOS REALES</span>
-                </div>
-                <div class="diagnostics-body">
-                    <p id="diagnosticText">Cargando diagnóstico del resort...</p>
-                </div>
-            </div>
-
-            <div class="hero-buttons">
-                <a href="#solucionador" class="btn-primary nav-link-sound">Iniciar Simulador</a>
-                <a href="#terminal" class="btn-secondary nav-link-sound">Abrir CLI Console</a>
+            <div class="hero-actions">
+                <a href="#casos" class="btn-primary">Explorar Casos</a>
+                <a href="FEDEVOLPINTESTADEVELOPER_OPTIMIZADO.pdf" download="FEDEVOLPINTESTADEVELOPER_OPTIMIZADO.pdf" class="btn-secondary">
+                    Descargar CV (PDF ATS)
+                </a>
             </div>
         </div>
-        <div class="hero-image-wrapper">
-            <div class="hero-image-glow"></div>
-            <div class="hero-image">
-                <img src="img/perfil.png" alt="Federico Volpintesta | Desarrollador de Soluciones">
+        <div class="hero-image-block">
+            <div class="image-border-glow"></div>
+            <div class="portrait-container">
+                <img src="img/perfil.png" alt="Federico Volpintesta">
             </div>
         </div>
     </header>
 
-    <!-- SECTION 1: THE SOLUCIONADOR (Interactive Problem Simulator) -->
-    <section id="solucionador" class="container">
+    <!-- SECTION 1: REGISTRO DE SOLUCIONES (Simulador de Problemas) -->
+    <section id="casos" class="container">
+        <div class="section-meta">SOLUCIONES EN PRODUCCIÓN</div>
         <div class="section-header">
-            <h2>El <span>Solucionador</span> Operativo</h2>
-            <p>Selecciona una ineficiencia real detectada en Los Pinos Resort para observar cómo fue erradicada.</p>
+            <h2>Casos de <span>Impacto Real</span></h2>
+            <p>Estructuración técnica de ineficiencias graves detectadas en Los Pinos Resort (5★) y las plataformas desplegadas para erradicarlas.</p>
         </div>
 
-        <div class="simulator-dashboard">
-            <div class="simulator-selector">
-                <button class="selector-tab active nav-link-sound" data-case="spa">
-                    <span class="tab-num">01</span>
-                    <span class="tab-title">ReservaSpa - Gestión de Agenda</span>
+        <div class="editorial-dashboard">
+            <div class="dashboard-tabs">
+                <button class="tab-button active" data-case="spa">
+                    <span class="tab-index">01</span>
+                    <span class="tab-text">ReservaSpa &mdash; Gestión de Turnos</span>
                 </button>
-                <button class="selector-tab nav-link-sound" data-case="lost">
-                    <span class="tab-num">02</span>
-                    <span class="tab-title">Lost & Found - Trazabilidad Legal</span>
+                <button class="tab-button" data-case="lost">
+                    <span class="tab-index">02</span>
+                    <span class="tab-text">Lost & Found &mdash; Seguridad y Control</span>
                 </button>
             </div>
 
-            <div class="simulator-board">
-                <!-- El Caos (Antes) -->
-                <div class="board-panel panel-chaos">
-                    <div class="panel-header">
-                        <span class="status-indicator red"></span>
-                        <h4>EL CAOS OPERATIVO (ANTES)</h4>
-                    </div>
-                    <div class="panel-body">
-                        <ul class="chaos-list" id="chaosList">
-                            <!-- Inyectado dinámicamente -->
-                        </ul>
-                    </div>
-                    <div class="panel-footer error-log">
-                        <span>ERROR STATUS: CRITICAL_OVERFLOW</span>
-                    </div>
+            <div class="dashboard-content">
+                <!-- El Desafío (Antes) -->
+                <div class="content-panel panel-chaos">
+                    <div class="panel-tag">EL DESAFÍO OPERATIVO</div>
+                    <h3 class="panel-headline">Ineficiencia y Fricción</h3>
+                    <ul class="chaos-bullet-list" id="chaosList">
+                        <!-- Inyectado dinámicamente -->
+                    </ul>
                 </div>
 
                 <!-- La Solución (Después) -->
-                <div class="board-panel panel-solution">
-                    <div class="panel-header">
-                        <span class="status-indicator green"></span>
-                        <h4>SOLUCIÓN IMPLEMENTADA (DESPUÉS)</h4>
+                <div class="content-panel panel-solution">
+                    <div class="panel-tag success">SOLUCIÓN DE INGENIERÍA</div>
+                    <h3 class="panel-headline" id="solutionTitle">ReservaSpa Termal</h3>
+                    <p class="panel-desc" id="solutionDesc">Sistema web de reserva directa que sincroniza la disponibilidad de terapeutas y recursos en tiempo real.</p>
+                    
+                    <div class="tags-container" id="archTags">
+                        <!-- Inyectado dinámicamente -->
                     </div>
-                    <div class="panel-body">
-                        <div class="solution-details">
-                            <h5 id="solutionTitle">ReservaSpa - Automatización e Integración en Tiempo Real</h5>
-                            <p id="solutionDesc">Estructura web interactiva y persistencia relacional inmediata.</p>
-                            <div class="architecture-tags" id="archTags">
-                                <!-- Inyectado dinámicamente -->
-                            </div>
-                            <div class="impact-metrics-box">
-                                <span class="metrics-title">IMPACTO EN NEGOCIO CUANTIFICABLE:</span>
-                                <ul class="metrics-list" id="metricsList">
-                                    <!-- Inyectado dinámicamente -->
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel-footer success-log">
-                        <span>SYSTEM STATUS: OPTIMAL_RUNNING</span>
+
+                    <div class="results-box">
+                        <span class="results-label">RETORNO DE INVERSIÓN VERIFICADO:</span>
+                        <ul class="results-list" id="metricsList">
+                            <!-- Inyectado dinámicamente -->
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -174,345 +104,216 @@
     </section>
 
     <!-- SECTION 2: DIGITALIZATION ROI CALCULATOR -->
-    <section id="calculadora" class="container dark-section">
+    <section id="roi" class="container dark-section">
+        <div class="section-meta">ANÁLISIS FINANCIERO</div>
         <div class="section-header">
-            <h2>Calculadora de <span>Impacto & ROI</span></h2>
-            <p>Configura las variables operativas de tu establecimiento y simula el impacto en ahorro y rentabilidad al desplegar mis sistemas.</p>
+            <h2>Estimador de <span>Eficiencia & Ahorro</span></h2>
+            <p>Configura los parámetros operativos de tu establecimiento y visualiza el impacto inmediato proyectado de mis sistemas.</p>
         </div>
 
-        <div class="calculator-wrapper">
+        <div class="roi-calculator">
             <div class="calculator-inputs">
-                <div class="input-card">
-                    <div class="input-header">
-                        <span class="icon-number">1</span>
-                        <label for="rangeReservas">Reservas de Spa Mensuales</label>
+                <div class="slider-group">
+                    <div class="slider-header">
+                        <span class="slider-num">01</span>
+                        <label for="rangeReservas">Reservas de Spa / Mensuales</label>
                     </div>
-                    <div class="range-wrapper">
-                        <input type="range" id="rangeReservas" min="100" max="2000" value="600" step="50" class="custom-slider">
-                        <div class="range-values">
-                            <span>100</span>
-                            <span class="highlight-val" id="valReservas">600 turnos</span>
-                            <span>2000</span>
-                        </div>
+                    <input type="range" id="rangeReservas" min="100" max="2000" value="600" step="50" class="elegant-slider">
+                    <div class="slider-metrics">
+                        <span>100</span>
+                        <span class="value-display" id="valReservas">600 turnos</span>
+                        <span>2,000</span>
                     </div>
                 </div>
 
-                <div class="input-card">
-                    <div class="input-header">
-                        <span class="icon-number">2</span>
-                        <label for="rangeHabitaciones">Habitaciones Ocupadas Promedio / Día</label>
+                <div class="slider-group">
+                    <div class="slider-header">
+                        <span class="slider-num">02</span>
+                        <label for="rangeHabitaciones">Habitaciones Ocupadas / Día</label>
                     </div>
-                    <div class="range-wrapper">
-                        <input type="range" id="rangeHabitaciones" min="30" max="500" value="180" step="10" class="custom-slider">
-                        <div class="range-values">
-                            <span>30 hab</span>
-                            <span class="highlight-val" id="valHabitaciones">180 hab</span>
-                            <span>500 hab</span>
-                        </div>
+                    <input type="range" id="rangeHabitaciones" min="30" max="500" value="180" step="10" class="elegant-slider">
+                    <div class="slider-metrics">
+                        <span>30</span>
+                        <span class="value-display" id="valHabitaciones">180 hab</span>
+                        <span>500</span>
                     </div>
                 </div>
             </div>
 
             <div class="calculator-outputs">
-                <div class="roi-grid">
-                    <div class="roi-card">
-                        <span class="roi-label">TIEMPO OPERATIVO AHORRADO</span>
-                        <div class="roi-value" id="roiHours">174 hrs/mes</div>
-                        <p class="roi-desc">Reducción drástica en carga administrativa y recepción de llamadas.</p>
+                <div class="output-grid">
+                    <div class="output-card">
+                        <span class="output-label">TIEMPO OPERATIVO DEVUELTO</span>
+                        <div class="output-value" id="roiHours">174 hrs/mes</div>
+                        <p class="output-desc">Reducción drástica del trabajo manual y llamadas en la recepción.</p>
                     </div>
-                    <div class="roi-card">
-                        <span class="roi-label">CONSUMO DE PAPEL EVITADO</span>
-                        <div class="roi-value" id="roiPaper">870 folios/mes</div>
-                        <p class="roi-desc">Digitalización total y generación inmediata de reportes PDF.</p>
+                    <div class="output-card">
+                        <span class="output-label">CONSUMO DE PAPEL EVITADO</span>
+                        <div class="output-value" id="roiPaper">870 folios/mes</div>
+                        <p class="output-desc">Digitalización de fichas médicas, reportes y registros de entrega.</p>
                     </div>
-                    <div class="roi-card highlight">
-                        <span class="roi-label">INCREMENTO PROYECTADO EN FACTURACIÓN</span>
-                        <div class="roi-value" id="roiRevenue">USD $3,150/mes</div>
-                        <p class="roi-desc">Basado en un aumento real del 35% de reservas de spa vía digital.</p>
+                    <div class="output-card highlighted">
+                        <span class="output-label">INCREMENTO ESTIMADO EN FACTURACIÓN</span>
+                        <div class="output-value" id="roiRevenue">USD $3,150/mes</div>
+                        <p class="output-desc">Basado en un incremento real del 35% de reservas de spa al habilitar el canal online.</p>
                     </div>
-                    <div class="roi-card">
-                        <span class="roi-label">MARGEN DE ERROR EN LOGÍSTICA</span>
-                        <div class="roi-value accent">0.0%</div>
-                        <p class="roi-desc">Trazabilidad legal blindada y sin pérdidas de objetos.</p>
+                    <div class="output-card">
+                        <span class="output-label">MARGEN DE ERROR EN SEGURIDAD</span>
+                        <div class="output-value accent">0.0%</div>
+                        <p class="output-desc">Trazabilidad legal blindada bajo actas PDF automatizadas.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECTION 3: FEDE-CLI INTERACTIVE TERMINAL -->
-    <section id="terminal" class="container">
+    <!-- SECTION 3: CORE OPERATIONAL PHILOSOPHY -->
+    <section id="filosofia" class="container">
+        <div class="section-meta">PRINCIPIOS DE INGENIERÍA</div>
         <div class="section-header">
-            <h2>Fede-CLI <span>Interactive Console</span></h2>
-            <p>Interactúa de forma directa con la terminal de diagnóstico de mi arquitectura técnica y sistemas.</p>
+            <h2>Mi Filosofía de <span>Resolución</span></h2>
+            <p>Pilares lógicos en los que se basan mis desarrollos para asegurar alta confiabilidad y retorno de negocio.</p>
         </div>
 
-        <div class="terminal-window">
-            <div class="terminal-bar">
-                <div class="bar-buttons">
-                    <span class="t-btn close"></span>
-                    <span class="t-btn minimize"></span>
-                    <span class="t-btn zoom"></span>
-                </div>
-                <div class="bar-title">antigravity@fede-dev-console: ~/portfolio</div>
-                <div class="bar-status">STATUS: ONLINE</div>
+        <div class="philosophy-grid">
+            <div class="philosophy-card">
+                <div class="card-icon">01</div>
+                <h3>Integridad Transaccional</h3>
+                <p>Prevención activa de duplicados, colisiones y sobreventas de recursos mediante el diseño cuidadoso de bases de datos relacionales concurrentes y bloqueos lógicos en PostgreSQL.</p>
             </div>
-            
-            <div class="terminal-body" id="terminalBody">
-                <div class="terminal-line system-msg">fede-core initializing system telemetry... [OK]</div>
-                <div class="terminal-line system-msg">Type 'help' or click on a quick command chip below to scan technical parameters.</div>
-                
-                <!-- Output container -->
-                <div class="terminal-output" id="terminalOutput"></div>
-                
-                <!-- Prompt line -->
-                <div class="prompt-line">
-                    <span class="prompt-symbol">antigravity@fede:~$</span>
-                    <input type="text" id="terminalInput" placeholder="Escribe un comando..." autocomplete="off" spellcheck="false">
-                </div>
+            <div class="philosophy-card">
+                <div class="card-icon">02</div>
+                <h3>Trazabilidad y Cumplimiento</h3>
+                <p>Auditoría digital completa de flujos de valor. Automatización de firmas legales, reportes y generación dinámica de documentos PDF para eliminar el error humano y la carga administrativa.</p>
             </div>
-
-            <div class="terminal-quick-chips">
-                <button class="cmd-chip nav-link-sound" data-cmd="help">help</button>
-                <button class="cmd-chip nav-link-sound" data-cmd="reservaspa">reservaspa</button>
-                <button class="cmd-chip nav-link-sound" data-cmd="lostfound">lostfound</button>
-                <button class="cmd-chip nav-link-sound" data-cmd="metrics">metrics</button>
-                <button class="cmd-chip nav-link-sound" data-cmd="skills">skills</button>
-                <button class="cmd-chip nav-link-sound" data-cmd="download-cv">download-cv</button>
-                <button class="cmd-chip nav-link-sound" data-cmd="clear">clear</button>
+            <div class="philosophy-card">
+                <div class="card-icon">03</div>
+                <h3>Cero Papel & Sostenibilidad</h3>
+                <p>Reemplazo total de libros manuscritos por formularios digitales adaptados a dispositivos móviles, optimizando la comunicación interna en tiempo real entre departamentos operativos.</p>
+            </div>
+            <div class="philosophy-card">
+                <div class="card-icon">04</div>
+                <h3>Pragmatismo Técnico</h3>
+                <p>Selección estricta de stacks tecnológicos modernos y estables (React.js, Node.js, Supabase, Django) orientada a la velocidad de carga, la solidez estructural y la facilidad de mantenimiento.</p>
             </div>
         </div>
     </section>
 
-    <!-- SECTION 4: LOG EXPERIENCIA (CV Board) -->
-    <section id="cv" class="container dark-section">
+    <!-- SECTION 4: PROFESSIONAL LOG (CV Timeline) -->
+    <section id="experiencia" class="container dark-section">
+        <div class="section-meta">HISTORIAL DE LOGROS</div>
         <div class="section-header">
-            <h2>Log de Experiencia <span>Operativa</span></h2>
-            <p>Resumen estructural de mi experiencia real digitalizando procesos en establecimientos de primer nivel.</p>
+            <h2>Experiencia <span>Profesional</span></h2>
+            <p>Estructuración de mi carrera orientada al desarrollo de software y digitalización hotelera real.</p>
         </div>
 
-        <div class="cv-structure-wrapper">
-            <div class="cv-main-panel">
-                <div class="cv-header">
-                    <h3>Federico Volpintesta</h3>
-                    <p class="role-title">Desarrollador Full Stack / Especialista en Digitalización</p>
-                    <p class="resort-location">Los Pinos Resort & Spa Termal (Hotel 5★) | Argentina (2024 - Presente)</p>
+        <div class="timeline-wrapper">
+            <div class="timeline-card">
+                <div class="timeline-header">
+                    <div class="header-main">
+                        <h3>Desarrollador Full Stack &amp; Especialista en Digitalización</h3>
+                        <span class="timeline-date">2024 &mdash; Presente</span>
+                    </div>
+                    <p class="timeline-company">Los Pinos Resort & Spa Termal (Hotel 5★) &bull; Argentina</p>
                 </div>
-
-                <div class="cv-body-bullets">
-                    <div class="bullet-row">
-                        <div class="bullet-indicator"><span class="pulse-cyan"></span></div>
-                        <div class="bullet-text">
-                            <strong>Dirección Técnica y Operativa:</strong> Líder tecnológico en la reingeniería digital del resort de lujo, diseñando arquitecturas web modulares que erradican cuellos de botella e impulsan directamente las ventas y control interno.
-                        </div>
-                    </div>
-                    <div class="bullet-row">
-                        <div class="bullet-indicator"><span class="pulse-cyan"></span></div>
-                        <div class="bullet-text">
-                            <strong>ReservaSpa (+35% Ventas):</strong> Diseño, desarrollo y despliegue del sistema integrado de reservas que automatiza las agendas del personal, previene la sobreventa de turnos y sincroniza en tiempo real con Supabase la información del huésped.
-                        </div>
-                    </div>
-                    <div class="bullet-row">
-                        <div class="bullet-indicator"><span class="pulse-cyan"></span></div>
-                        <div class="bullet-text">
-                            <strong>Lost & Found (0% Error):</strong> Implementación de una plataforma digital para el registro y trazabilidad legal de artículos extraviados, reduciendo el margen de error a cero y eliminando por completo las planillas manuales y papel en Ama de Llaves y Recepción.
-                        </div>
-                    </div>
-                    <div class="bullet-row">
-                        <div class="bullet-indicator"><span class="pulse-cyan"></span></div>
-                        <div class="bullet-text">
-                            <strong>Optimización del Backend:</strong> Arquitecturización de bases de datos relacionales en PostgreSQL, esquemas seguros de autenticación (Auth) y automatizaciones de generación de reportes y actas PDF en segundos.
-                        </div>
-                    </div>
+                <div class="timeline-body">
+                    <p class="timeline-intro">Responsable de liderar la transformación digital de la operativa interna, el desarrollo e integración de sistemas y la administración de bases de datos operativas de producción.</p>
+                    <ul class="timeline-bullets">
+                        <li><strong>Desarrollo de ReservaSpa:</strong> Automatización total de la agenda del spa, integrando el flujo de reserva con el backend administrativo, aumentando un 35% las ventas de servicios.</li>
+                        <li><strong>Ingeniería de Lost & Found:</strong> Creación del sistema de registro y actas legales de entrega digitales en PDF, reduciendo al 0% el error logístico y eliminando completamente el uso de papel en Ama de Llaves.</li>
+                        <li><strong>Optimización y Tiempos de Carga:</strong> Migración de estructuras de almacenamiento a Supabase DB con políticas seguras de autenticación y persistencia relacional optimizada, bajando auditorías un 50%.</li>
+                    </ul>
                 </div>
+            </div>
 
-                <div class="cv-actions">
-                    <a href="FEDEVOLPINTESTADEVELOPER_OPTIMIZADO.pdf" download="FEDEVOLPINTESTADEVELOPER_OPTIMIZADO.pdf" class="btn-primary nav-link-sound" id="downloadCVBtn">
-                        Descargar CV Optimizado (PDF ATS-Ready)
-                    </a>
+            <div class="timeline-card secondary">
+                <div class="timeline-header">
+                    <div class="header-main">
+                        <h3>Master en Desarrollo Full Stack</h3>
+                        <span class="timeline-date">Graduado en 2024</span>
+                    </div>
+                    <p class="timeline-company">Academia Conquer Blocks</p>
+                </div>
+                <div class="timeline-body">
+                    <p>Formación avanzada en frontend moderno (React.js, TypeScript), backend seguro (Node.js, APIs RESTful) y bases de datos relacionales avanzadas, con fuerte enfoque en proyectos reales listos para producción.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECTION 5: CONTACTO CORE (Console-style Message Prompt) -->
+    <!-- SECTION 5: CONTACT DIRECT LINK -->
     <section id="contacto" class="container">
+        <div class="section-meta">CONTACTO DIRECTO</div>
         <div class="section-header">
-            <h2>Enlace <span>Directo</span></h2>
-            <p>Inicializa una comunicación de alto nivel para resolver ineficiencias de software en tu organización.</p>
+            <h2>Hablemos de <span>Eficiencia</span></h2>
+            <p>Estoy disponible para conversar sobre cómo aportar código de alto valor y automatización comprobada a tu organización.</p>
         </div>
 
-        <div class="contact-center-wrapper">
-            <div class="contact-card-v2">
-                <div class="card-status-bar">
-                    <span class="status-indicator active"></span>
-                    <span>CHANNEL OPEN</span>
-                </div>
-                <h3>¿Listo para inyectar valor técnico?</h3>
-                <p class="subtitle">Estoy disponible para coordinar una entrevista y conversar sobre cómo aportar eficiencia comprobada a tu equipo de desarrollo.</p>
-                
-                <div class="contact-items">
-                    <a href="https://wa.me/5493424624840" target="_blank" class="contact-item nav-link-sound">
-                        <span>TELÉFONO / WHATSAPP</span>
-                        +54 9 342-4624840
-                    </a>
-                    <a href="mailto:federicovolpintesta@gmail.com" class="contact-item nav-link-sound">
-                        <span>EMAIL</span>
-                        federicovolpintesta@gmail.com
-                    </a>
-                    <a href="https://www.linkedin.com/in/federico-volpintesta-675378248" target="_blank" class="contact-item nav-link-sound">
-                        <span>LINKEDIN</span>
-                        in/federico-volpintesta
-                    </a>
-                </div>
+        <div class="contact-editorial-card">
+            <div class="contact-text-area">
+                <h3>¿Listo para optimizar tu infraestructura operativa?</h3>
+                <p>Coordinemos una entrevista técnica. Analizaré tus flujos actuales y estructuraremos una propuesta de digitalización robusta.</p>
+            </div>
+            <div class="contact-links-area">
+                <a href="https://wa.me/5493424624840" target="_blank" class="contact-link-row">
+                    <span class="link-label">WHATSAPP / TELÉFONO</span>
+                    <span class="link-value">+54 9 342-4624840</span>
+                </a>
+                <a href="mailto:federicovolpintesta@gmail.com" class="contact-link-row">
+                    <span class="link-label">EMAIL DIRECTO</span>
+                    <span class="link-value">federicovolpintesta@gmail.com</span>
+                </a>
+                <a href="https://www.linkedin.com/in/federico-volpintesta-675378248" target="_blank" class="contact-link-row">
+                    <span class="link-label">LINKEDIN PROFESIONAL</span>
+                    <span class="link-value">linkedin.com/in/federico-volpintesta</span>
+                </a>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>© 2026 Federico Volpintesta | Desarrollador de Soluciones y Digitalización Operativa</p>
+        <p>&copy; 2026 Federico Volpintesta &bull; Desarrollador Full Stack &amp; Especialista en Digitalización.</p>
     </footer>
 
-    <!-- INTERACTIVE LOGIC AND SCRIPTS -->
+    <!-- INTERACTIVE LOGIC -->
     <script>
-        // --- 1. THEME SWITCHER LOGIC ---
-        const themeButtons = document.querySelectorAll('.theme-btn');
-        themeButtons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                themeButtons.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                const theme = btn.getAttribute('data-theme');
-                document.body.className = `theme-${theme}`;
-                playSynthSound(440, 'sine', 0.08); // Subtle feedback beep
-            });
-        });
-
-        // --- 2. AUDIO SYNTHESIZER (WEB AUDIO API) ---
-        let audioCtx = null;
-        let isMuted = true;
-        const audioToggleBtn = document.getElementById('audioToggleBtn');
-        const audioStatusLabel = audioToggleBtn.querySelector('.audio-status-label');
-
-        function initAudioContext() {
-            if (!audioCtx) {
-                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-            }
-            if (audioCtx.state === 'suspended') {
-                audioCtx.resume();
-            }
-        }
-
-        function playSynthSound(frequency, type = 'sine', duration = 0.1, volumeVal = 0.05) {
-            if (isMuted) return;
-            try {
-                initAudioContext();
-                const osc = audioCtx.createOscillator();
-                const gain = audioCtx.createGain();
-                
-                osc.type = type;
-                osc.frequency.setValueAtTime(frequency, audioCtx.currentTime);
-                
-                // Attack & Decay envelope
-                gain.gain.setValueAtTime(volumeVal, audioCtx.currentTime);
-                gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + duration);
-                
-                osc.connect(gain);
-                gain.connect(audioCtx.destination);
-                
-                osc.start();
-                osc.stop(audioCtx.currentTime + duration);
-            } catch (e) {
-                console.error("Audio error", e);
-            }
-        }
-
-        audioToggleBtn.addEventListener('click', () => {
-            isMuted = !isMuted;
-            if (!isMuted) {
-                initAudioContext();
-                audioToggleBtn.classList.add('active');
-                audioStatusLabel.textContent = 'ACTIVE';
-                playSynthSound(587.33, 'triangle', 0.15, 0.08); // Friendly beep (D5)
-                setTimeout(() => playSynthSound(880, 'triangle', 0.12, 0.06), 70); // Arpeggiated note (A5)
-            } else {
-                audioToggleBtn.classList.remove('active');
-                audioStatusLabel.textContent = 'MUTED';
-            }
-        });
-
-        // Sound triggers on interactive hover/clicks
-        const soundElements = document.querySelectorAll('.nav-link-sound, .theme-btn, .custom-slider, .cmd-chip');
-        soundElements.forEach(elem => {
-            elem.addEventListener('mouseenter', () => {
-                if (!isMuted) {
-                    playSynthSound(784, 'sine', 0.04, 0.02); // Minimal tick on hover
-                }
-            });
-            elem.addEventListener('click', () => {
-                if (!isMuted) {
-                    playSynthSound(330, 'triangle', 0.1, 0.06); // Click confirmation beep
-                }
-            });
-        });
-
-        // --- 3. DYNAMIC HERO TELEMETRY TEXT ---
-        const diagnosticPool = [
-            "DIAGNÓSTICO: Agendas del Spa colapsadas por llamadas simultáneas. -> SOLUCIÓN: ReservaSpa grilla en tiempo real.",
-            "DIAGNÓSTICO: Inventario de Lost & Found con planillas de papel inconsistentes. -> SOLUCIÓN: Trazabilidad digital 100% segura.",
-            "DIAGNÓSTICO: Riesgo de pérdida de información y descontrol de turnos. -> SOLUCIÓN: Integración relacional PostgreSQL con Supabase.",
-            "DIAGNÓSTICO: Actas legales de entrega escritas a mano. -> SOLUCIÓN: Automatización jsPDF autogenerada en recepción."
-        ];
-        let diagnosticIndex = 0;
-        const diagnosticTextElem = document.getElementById('diagnosticText');
-        
-        function cycleDiagnostics() {
-            diagnosticTextElem.style.opacity = '0';
-            setTimeout(() => {
-                diagnosticTextElem.textContent = diagnosticPool[diagnosticIndex];
-                diagnosticTextElem.style.opacity = '1';
-                diagnosticIndex = (diagnosticIndex + 1) % diagnosticPool.length;
-            }, 500);
-        }
-        cycleDiagnostics();
-        setInterval(cycleDiagnostics, 6000);
-
-        // --- 4. PROBLEM SIMULATOR LOGIC ("EL SOLUCIONADOR") ---
+        // --- 1. PROBLEM SIMULATOR DATA ---
         const caseStudies = {
             spa: {
                 chaos: [
-                    "Sobreventa de turnos de masajes debido a descoordinación telefónica.",
-                    "Cuadernos físicos borroneados, imposibles de auditar eficientemente.",
-                    "Pérdida estimada del 15% de reservas potenciales por falta de disponibilidad online.",
-                    "Huéspedes frustrados esperando confirmaciones manuales de recepción."
+                    "Sobreventa habitual de masajes por descoordinación telefónica interna.",
+                    "Cuadernos de reserva físicos borroneados, difíciles de auditar por administración.",
+                    "Pérdida estimada del 15% de ventas debido a la falta de disponibilidad de reserva directa online.",
+                    "Retrasos en la asignación de terapeutas y cabinas de masaje."
                 ],
-                title: "ReservaSpa - Gestión e Inteligencia de Agendas",
-                desc: "Sistema web premium desarrollado a medida para Los Pinos Resort. Sincroniza la reserva online directa del cliente con la grilla del recepcionista y terapeuta.",
-                tags: ["React.js", "Node.js", "Supabase", "PostgreSQL", "Realtime sync", "Responsive CSS"],
+                title: "ReservaSpa Termal",
+                desc: "Sistema web de reserva a medida desarrollado para Los Pinos Resort. Sincroniza en tiempo real la reserva del huésped con la disponibilidad del terapeuta y cabina libre.",
+                tags: ["React.js", "Node.js", "PostgreSQL", "Supabase DB", "Realtime Persistence", "Responsive UI"],
                 metrics: [
-                    "Aumento comprobado del 35% en facturación de servicios de Spa.",
-                    "0% sobreventa o colisión de horarios mediante bloqueos concurrentes de DB.",
-                    "100% visibilidad de turnos y agendas desde cualquier dispositivo."
+                    "Incremento comprobado del 35% en ventas de servicios del Spa.",
+                    "0% sobreventas de terapeutas a través de lógica de base de datos relacional.",
+                    "100% de los turnos digitalizados y visibles para administración y gobernanta."
                 ]
             },
             lost: {
                 chaos: [
-                    "Planillas de Excel corruptas para reportar objetos hallados por mucamas.",
-                    "Falta de trazabilidad legal de actas de devolución ante reclamos.",
-                    "Pérdidas de tiempo en recepción buscando registros en libros manuscritos.",
-                    "Errores humanos recurrentes en el despacho de encomiendas de retorno."
+                    "Planillas de Excel corruptas y duplicados para reportar objetos olvidados.",
+                    "Inseguridad legal al carecer de actas escritas de entrega y devolución de valores.",
+                    "Pérdidas de tiempo buscando en libros físicos en el depósito de Ama de Llaves.",
+                    "Falta de comunicación instantánea entre mucamas y recepción."
                 ],
-                title: "Lost & Found - Control de Extravíos Blindado",
-                desc: "Plataforma administrativa que automatiza el reporte inmediato de mucamas, valida el estado del objeto y genera el acta legal de devolución en formato digital PDF.",
-                tags: ["JavaScript (ES6+)", "Supabase DB & Auth", "jsPDF API", "Responsive grid", "Automated Workflows"],
+                title: "Lost & Found Security",
+                desc: "Plataforma administrativa blindada que automatiza el registro de artículos encontrados, controla su ubicación en depósito y emite actas de entrega legales en formato PDF autogenerado.",
+                tags: ["JavaScript (ES6+)", "Supabase Auth/DB", "jsPDF API", "Responsive CSS Grid", "Automated PDFs"],
                 metrics: [
-                    "Reducción al 0% en el margen de error de devoluciones.",
-                    "Cero uso de papel en Ama de Llaves y Recepción del hotel.",
-                    "Reducción del 50% en el tiempo administrativo de auditoría de seguridad."
+                    "Reducción al 0% en el margen de error de devoluciones y reclamos.",
+                    "Cero uso de papel en Recepción y Gobernanta del hotel.",
+                    "Optimización del 50% en tiempos de auditoría de seguridad del resort."
                 ]
             }
         };
 
-        const tabs = document.querySelectorAll('.selector-tab');
+        const tabButtons = document.querySelectorAll('.tab-button');
         const chaosList = document.getElementById('chaosList');
         const solutionTitle = document.getElementById('solutionTitle');
         const solutionDesc = document.getElementById('solutionDesc');
@@ -522,32 +323,42 @@
         function renderCase(caseKey) {
             const data = caseStudies[caseKey];
             
-            // Render Chaos
-            chaosList.innerHTML = data.chaos.map(item => `<li><span class="warning-symbol">⚠️</span> ${item}</li>`).join('');
-            
-            // Render Solution
+            // Chaos Render
+            chaosList.innerHTML = data.chaos.map(bullet => `
+                <li>
+                    <span class="warning-indicator"></span>
+                    <p>${bullet}</p>
+                </li>
+            `).join('');
+
+            // Solution Render
             solutionTitle.textContent = data.title;
             solutionDesc.textContent = data.desc;
             
-            // Render Tags
-            archTags.innerHTML = data.tags.map(tag => `<span class="arch-tag">${tag}</span>`).join('');
+            // Tags Render
+            archTags.innerHTML = data.tags.map(tag => `<span class="tag-pill">${tag}</span>`).join('');
             
-            // Render Metrics
-            metricsList.innerHTML = data.metrics.map(metric => `<li><span class="check-symbol">✓</span> ${metric}</li>`).join('');
+            // Metrics Render
+            metricsList.innerHTML = data.metrics.map(metric => `
+                <li>
+                    <span class="success-indicator"></span>
+                    <p>${metric}</p>
+                </li>
+            `).join('');
         }
 
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                tabs.forEach(t => t.classList.remove('active'));
-                tab.classList.add('active');
-                renderCase(tab.getAttribute('data-case'));
+        tabButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                tabButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                renderCase(btn.getAttribute('data-case'));
             });
         });
-        
-        // Initial simulator render
+
+        // Initialize Simulator
         renderCase('spa');
 
-        // --- 5. DIGITALIZATION ROI CALCULATOR LOGIC ---
+        // --- 2. ROI CALCULATOR LOGIC ---
         const rangeReservas = document.getElementById('rangeReservas');
         const rangeHabitaciones = document.getElementById('rangeHabitaciones');
         const valReservas = document.getElementById('valReservas');
@@ -557,146 +368,30 @@
         const roiPaper = document.getElementById('roiPaper');
         const roiRevenue = document.getElementById('roiRevenue');
 
-        function updateROI() {
+        function calculateROI() {
             const reservas = parseInt(rangeReservas.value);
             const habs = parseInt(rangeHabitaciones.value);
 
-            valReservas.textContent = `${reservas} turnos`;
-            valHabitaciones.textContent = `${habs} habitaciones`;
+            valReservas.textContent = `${reservas.toLocaleString('es-ES')} turnos`;
+            valHabitaciones.textContent = `${habs} habs`;
 
-            // Formulas based on Federico's real production metrics
+            // Operational metrics formulas
             const hoursSaved = Math.round((reservas * 0.25) + (habs * 0.3 * 30));
             const paperSheets = Math.round((reservas * 1.2) + (habs * 1.5 * 30));
             
-            // Estimated average spa ticket: 20 USD. Digital boost is 35% of total digitalized volume
-            const extraRevenue = Math.round(reservas * 20 * 0.35);
+            // Average spa ticket: 20 USD. Boost: 35%
+            const revenueBoost = Math.round(reservas * 20 * 0.35);
 
             roiHours.textContent = `${hoursSaved} hrs/mes`;
             roiPaper.textContent = `${paperSheets.toLocaleString('es-ES')} folios/mes`;
-            roiRevenue.textContent = `USD $${extraRevenue.toLocaleString('es-ES')}/mes`;
+            roiRevenue.textContent = `USD $${revenueBoost.toLocaleString('es-ES')}/mes`;
         }
 
-        rangeReservas.addEventListener('input', () => {
-            updateROI();
-            if (!isMuted && Math.random() < 0.2) playSynthSound(600, 'sine', 0.02, 0.01);
-        });
-        rangeHabitaciones.addEventListener('input', () => {
-            updateROI();
-            if (!isMuted && Math.random() < 0.2) playSynthSound(650, 'sine', 0.02, 0.01);
-        });
-        
-        // Initial update
-        updateROI();
+        rangeReservas.addEventListener('input', calculateROI);
+        rangeHabitaciones.addEventListener('input', calculateROI);
 
-        // --- 6. FEDE-CLI INTERACTIVE TERMINAL LOGIC ---
-        const terminalInput = document.getElementById('terminalInput');
-        const terminalOutput = document.getElementById('terminalOutput');
-        const terminalBody = document.getElementById('terminalBody');
-        const quickChips = document.querySelectorAll('.cmd-chip');
-
-        const commands = {
-            help: `
-Comandos disponibles en Fede-CLI:
-  <span class="cmd-cyan">reservaspa</span>   - Scan técnico del sistema de agendamiento.
-  <span class="cmd-cyan">lostfound</span>    - Scan técnico del sistema de trazabilidad de objetos.
-  <span class="cmd-cyan">metrics</span>      - Métricas operativas de negocio verificadas.
-  <span class="cmd-cyan">skills</span>       - Habilidades y stack tecnológico.
-  <span class="cmd-cyan">download-cv</span>  - Descarga del CV Optimizado ATS en PDF.
-  <span class="cmd-cyan">clear</span>        - Limpiar consola.
-  <span class="cmd-cyan">help</span>         - Mostrar este menú.
-`,
-            reservaspa: `
-<span class="cmd-green">[SCAN RESERVASPA - LOS PINOS RESORT]</span>
-* TIPO: Sistema de Gestión de Spa Termal y Grilla en Tiempo Real
-* ANTES: Solicitud telefónica manual, planillas manuscritas, sobreventa habitual de terapeutas.
-* SOLUCIÓN: Frontend Reactivo e interactivo, lógica concurrente PostgreSQL de asignación, Auth.
-* ARCHITECTURE:
-    [React View] <--> [Node.js Engine API] <--> [Supabase Relational Client DB]
-* MÉTRICA CLAVE: +35% de incremento de facturación vía reserva inmediata en su primer trimestre.
-`,
-            lostfound: `
-<span class="cmd-green">[SCAN LOST & FOUND - LOS PINOS RESORT]</span>
-* TIPO: Software de Seguridad, Control y Auditoría de Extravíos
-* ANTES: Planillas Excel corruptas, nula trazabilidad legal de actas de recepción.
-* SOLUCIÓN: Carga simplificada para Ama de Llaves, reportes autogenerados PDF en segundos.
-* ARCHITECTURE:
-    [JS Vanilla Engine UI] <--> [Supabase Database Auth API] <--> [jsPDF Document Generator]
-* MÉTRICA CLAVE: 0% margen de error en entregas, 100% digitalización de papel.
-`,
-            metrics: `
-<span class="cmd-green">[MÉTRICAS VERIFICADAS - CONTROL DE OPERACIONES]</span>
-- REDUCCIÓN ERROR LOGÍSTICA: <span class="cmd-cyan">100% (Margen 0.0%)</span>
-- INCREMENTO FACTURACIÓN SPA: <span class="cmd-cyan">+35% en primer trimestre</span>
-- AUDITORÍA DE SEGURIDAD (TIEMPO): <span class="cmd-cyan">-50% en velocidad de búsqueda</span>
-- REDUCCIÓN USO DE PAPEL: <span class="cmd-cyan">100% en Recepción y Gobernanta</span>
-`,
-            skills: `
-<span class="cmd-green">[SKILLS STACK TELEMETRY]</span>
-- FRONTEND:   JavaScript (ES6+), TypeScript, React.js, Responsive Design, CSS Grid/Flexbox
-- BACKEND:    Node.js, Django, REST APIs, CRUD Systems Architecture
-- DATABASE:   PostgreSQL, MySQL, Supabase Auth/DB Storage Engine
-- TOOLS:      Git, GitHub workflows, SEO Optimization, ATS-ready formatting
-`,
-            'download-cv': `
-<span class="cmd-green">[CV DOWNLOADING STARTED...]</span>
-- Archivo solicitado: FEDEVOLPINTESTADEVELOPER_OPTIMIZADO.pdf
-- Estado: Descarga completada correctamente.
-- <span class="cmd-cyan">Descargar archivo manualmente haciendo clic en el botón de abajo si la descarga automática no comenzó.</span>
-`
-        };
-
-        function execCommand(cmdText) {
-            const cleanCmd = cmdText.trim().toLowerCase();
-            
-            // Append visual prompt in the terminal output
-            const promptLine = document.createElement('div');
-            promptLine.className = 'terminal-line';
-            promptLine.innerHTML = `<span class="prompt-symbol">antigravity@fede:~$</span> ${cmdText}`;
-            terminalOutput.appendChild(promptLine);
-
-            if (cleanCmd === 'clear') {
-                terminalOutput.innerHTML = '';
-            } else if (cleanCmd === 'download-cv') {
-                terminalOutput.innerHTML += `<div class="terminal-line">${commands['download-cv']}</div>`;
-                
-                // Trigger auto-download
-                const link = document.createElement('a');
-                link.href = "FEDEVOLPINTESTADEVELOPER_OPTIMIZADO.pdf";
-                link.download = "FEDEVOLPINTESTADEVELOPER_OPTIMIZADO.pdf";
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-            } else if (commands[cleanCmd]) {
-                const response = document.createElement('div');
-                response.className = 'terminal-line';
-                response.innerHTML = commands[cleanCmd];
-                terminalOutput.appendChild(response);
-            } else if (cleanCmd !== '') {
-                const errorLine = document.createElement('div');
-                errorLine.className = 'terminal-line error-text';
-                errorLine.innerHTML = `Comando no reconocido: '${cmdText}'. Escribe 'help' para ver la lista de comandos válidos.`;
-                terminalOutput.appendChild(errorLine);
-            }
-
-            // Scroll to bottom
-            terminalBody.scrollTop = terminalBody.scrollHeight;
-        }
-
-        terminalInput.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter') {
-                const cmdText = terminalInput.value;
-                execCommand(cmdText);
-                terminalInput.value = '';
-            }
-        });
-
-        // Quick command chips clicking
-        quickChips.forEach(chip => {
-            chip.addEventListener('click', () => {
-                const cmd = chip.getAttribute('data-cmd');
-                execCommand(cmd);
-            });
-        });
+        // Initialize Calculator
+        calculateROI();
     </script>
 </body>
 </html>
