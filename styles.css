@@ -884,3 +884,37 @@ footer {
         display: none; /* Hide background grid lines on very small viewports */
     }
 }
+
+/* Language Switcher */
+.lang-switcher-container {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.8rem;
+    color: var(--text-dark);
+    margin-left: 1rem;
+}
+.lang-btn {
+    background: none;
+    border: none;
+    color: var(--text-dim);
+    cursor: pointer;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 0;
+    outline: none;
+}
+.lang-btn:hover {
+    color: var(--text);
+}
+.lang-btn.active {
+    color: #ffffff;
+    font-weight: 700;
+}
+.lang-divider {
+    color: rgba(255, 255, 255, 0.1);
+}
+

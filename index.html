@@ -18,24 +18,29 @@
             <img src="img/logo.png" alt="Federico Volpintesta Logo" class="main-logo">
         </div>
         <ul>
-            <li><a href="#casos">Casos de Éxito</a></li>
-            <li><a href="#roi">Estimador de ROI</a></li>
-            <li><a href="#filosofia">Filosofía</a></li>
-            <li><a href="#experiencia">Experiencia</a></li>
-            <li><a href="#contacto" class="nav-btn">Conectar →</a></li>
+            <li><a href="#casos" data-i18n="nav-cases">Casos de Éxito</a></li>
+            <li><a href="#roi" data-i18n="nav-roi">Estimador de ROI</a></li>
+            <li><a href="#filosofia" data-i18n="nav-philosophy">Filosofía</a></li>
+            <li><a href="#experiencia" data-i18n="nav-experience">Experiencia</a></li>
+            <li><a href="#contacto" class="nav-btn" data-i18n="nav-connect">Conectar →</a></li>
+            <li class="lang-switcher-container">
+                <button class="lang-btn active" data-lang="es">ES</button>
+                <span class="lang-divider">|</span>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </li>
         </ul>
     </nav>
 
     <!-- HERO SECTION -->
     <header class="hero">
         <div class="hero-content">
-            <div class="meta-label">FULL STACK DEVELOPER &bull; ESPECIALISTA EN DIGITALIZACIÓN</div>
-            <h1>Ingeniería de Software orientada a <span>Resolver Problemas</span> de Negocio.</h1>
-            <p class="hero-lead">Diseño e implemento arquitecturas web de alto rendimiento que digitalizan flujos operativos y erradican cuellos de botella reales en la industria hotelera de primer nivel.</p>
+            <div class="meta-label" data-i18n="hero-meta">FULL STACK DEVELOPER &bull; ESPECIALISTA EN DIGITALIZACIÓN</div>
+            <h1 data-i18n="hero-title">Ingeniería de Software orientada a <span>Resolver Problemas</span> de Negocio.</h1>
+            <p class="hero-lead" data-i18n="hero-lead">Diseño e implemento arquitecturas web de alto rendimiento que digitalizan flujos operativos y erradican cuellos de botella reales en la industria hotelera de primer nivel.</p>
             
             <div class="hero-actions">
-                <a href="#casos" class="btn-primary">Explorar Casos</a>
-                <a href="FEDEVOLPINTESTADEVELOPER_OPTIMIZADO.pdf" download="FEDEVOLPINTESTADEVELOPER_OPTIMIZADO.pdf" class="btn-secondary">
+                <a href="#casos" class="btn-primary" data-i18n="hero-btn-primary">Explorar Casos</a>
+                <a href="FEDEVOLPINTESTADEVELOPER_OPTIMIZADO.pdf" download="FEDEVOLPINTESTADEVELOPER_OPTIMIZADO.pdf" class="btn-secondary" id="downloadCVBtn" data-i18n="hero-btn-secondary">
                     Descargar CV (PDF ATS)
                 </a>
             </div>
@@ -50,29 +55,29 @@
 
     <!-- SECTION 1: REGISTRO DE SOLUCIONES (Simulador de Problemas) -->
     <section id="casos" class="container">
-        <div class="section-meta">SOLUCIONES EN PRODUCCIÓN</div>
+        <div class="section-meta" data-i18n="casos-meta">SOLUCIONES EN PRODUCCIÓN</div>
         <div class="section-header">
-            <h2>Casos de <span>Impacto Real</span></h2>
-            <p>Estructuración técnica de ineficiencias graves detectadas en Los Pinos Resort (5★) y las plataformas desplegadas para erradicarlas.</p>
+            <h2 data-i18n="casos-title">Casos de <span>Impacto Real</span></h2>
+            <p data-i18n="casos-lead">Estructuración técnica de ineficiencias graves detectadas en Los Pinos Resort (5★) y las plataformas desplegadas para erradicarlas.</p>
         </div>
 
         <div class="editorial-dashboard">
             <div class="dashboard-tabs">
                 <button class="tab-button active" data-case="spa">
                     <span class="tab-index">01</span>
-                    <span class="tab-text">ReservaSpa &mdash; Gestión de Turnos</span>
+                    <span class="tab-text" data-i18n="tab-spa">ReservaSpa &mdash; Gestión de Turnos</span>
                 </button>
                 <button class="tab-button" data-case="lost">
                     <span class="tab-index">02</span>
-                    <span class="tab-text">Lost & Found &mdash; Seguridad y Control</span>
+                    <span class="tab-text" data-i18n="tab-lost">Lost & Found &mdash; Seguridad y Control</span>
                 </button>
             </div>
 
             <div class="dashboard-content">
                 <!-- El Desafío (Antes) -->
                 <div class="content-panel panel-chaos">
-                    <div class="panel-tag">EL DESAFÍO OPERATIVO</div>
-                    <h3 class="panel-headline">Ineficiencia y Fricción</h3>
+                    <div class="panel-tag" data-i18n="chaos-tag">EL DESAFÍO OPERATIVO</div>
+                    <h3 class="panel-headline" data-i18n="chaos-title">Ineficiencia y Fricción</h3>
                     <ul class="chaos-bullet-list" id="chaosList">
                         <!-- Inyectado dinámicamente -->
                     </ul>
@@ -80,7 +85,7 @@
 
                 <!-- La Solución (Después) -->
                 <div class="content-panel panel-solution">
-                    <div class="panel-tag success">SOLUCIÓN DE INGENIERÍA</div>
+                    <div class="panel-tag success" data-i18n="solution-tag">SOLUCIÓN DE INGENIERÍA</div>
                     <h3 class="panel-headline" id="solutionTitle">ReservaSpa Termal</h3>
                     <p class="panel-desc" id="solutionDesc">Sistema web de reserva directa que sincroniza la disponibilidad de terapeutas y recursos en tiempo real.</p>
                     
@@ -89,7 +94,7 @@
                     </div>
 
                     <div class="results-box">
-                        <span class="results-label">RETORNO DE INVERSIÓN VERIFICADO:</span>
+                        <span class="results-label" data-i18n="results-label">RETORNO DE INVERSIÓN VERIFICADO:</span>
                         <ul class="results-list" id="metricsList">
                             <!-- Inyectado dinámicamente -->
                         </ul>
@@ -101,10 +106,10 @@
 
     <!-- SECTION 2: DIGITALIZATION ROI CALCULATOR -->
     <section id="roi" class="container dark-section">
-        <div class="section-meta">ANÁLISIS FINANCIERO</div>
+        <div class="section-meta" data-i18n="roi-meta">ANÁLISIS FINANCIERO</div>
         <div class="section-header">
-            <h2>Estimador de <span>Eficiencia & Ahorro</span></h2>
-            <p>Configura los parámetros operativos de tu establecimiento y visualiza el impacto inmediato proyectado de mis sistemas.</p>
+            <h2 data-i18n="roi-title">Estimador de <span>Eficiencia & Ahorro</span></h2>
+            <p data-i18n="roi-lead">Configura los parámetros operativos de tu establecimiento y visualiza el impacto inmediato proyectado de mis sistemas.</p>
         </div>
 
         <div class="roi-calculator">
@@ -112,7 +117,7 @@
                 <div class="slider-group">
                     <div class="slider-header">
                         <span class="slider-num">01</span>
-                        <label for="rangeReservas">Reservas de Spa / Mensuales</label>
+                        <label for="rangeReservas" data-i18n="label-reservas">Reservas de Spa / Mensuales</label>
                     </div>
                     <input type="range" id="rangeReservas" min="100" max="2000" value="600" step="50" class="elegant-slider">
                     <div class="slider-metrics">
@@ -125,7 +130,7 @@
                 <div class="slider-group">
                     <div class="slider-header">
                         <span class="slider-num">02</span>
-                        <label for="rangeHabitaciones">Habitaciones Ocupadas / Día</label>
+                        <label for="rangeHabitaciones" data-i18n="label-habitaciones">Habitaciones Ocupadas / Día</label>
                     </div>
                     <input type="range" id="rangeHabitaciones" min="30" max="500" value="180" step="10" class="elegant-slider">
                     <div class="slider-metrics">
@@ -139,24 +144,24 @@
             <div class="calculator-outputs">
                 <div class="output-grid">
                     <div class="output-card">
-                        <span class="output-label">TIEMPO DE RECEPCIÓN AHORRADO</span>
+                        <span class="output-label" data-i18n="roi-card1-label">TIEMPO DE RECEPCIÓN AHORRADO</span>
                         <div class="output-value" id="roiHours">50 hrs/mes</div>
-                        <p class="output-desc">Horas devueltas al personal al automatizar el proceso de reserva en línea (estimado en 5 min por turno).</p>
+                        <p class="output-desc" data-i18n="roi-card1-desc">Horas devueltas al personal al automatizar el proceso de reserva en línea (estimado en 5 min por turno).</p>
                     </div>
                     <div class="output-card">
-                        <span class="output-label">CONSUMO DE PAPEL EVITADO</span>
+                        <span class="output-label" data-i18n="roi-card2-label">CONSUMO DE PAPEL EVITADO</span>
                         <div class="output-value" id="roiPaper">600 folios/mes</div>
-                        <p class="output-desc">Reducción directa de papel al digitalizar las planillas de turnos y actas de objetos perdidos.</p>
+                        <p class="output-desc" data-i18n="roi-card2-desc">Reducción directa de papel al digitalizar las planillas de turnos y actas de objetos perdidos.</p>
                     </div>
                     <div class="output-card highlighted">
-                        <span class="output-label">PREVENCIÓN DE DUPLICADOS Y SOBREVENTA</span>
+                        <span class="output-label" data-i18n="roi-card3-label">PREVENCIÓN DE DUPLICADOS Y SOBREVENTA</span>
                         <div class="output-value" id="roiRevenue">100%</div>
-                        <p class="output-desc">Garantía absoluta de asignación única de terapeutas y cabinas mediante restricciones de base de datos.</p>
+                        <p class="output-desc" data-i18n="roi-card3-desc">Garantía absoluta de asignación única de terapeutas y cabinas mediante restricciones de base de datos.</p>
                     </div>
                     <div class="output-card">
-                        <span class="output-label">INTEGRIDAD DE REGISTROS</span>
+                        <span class="output-label" data-i18n="roi-card4-label">INTEGRIDAD DE REGISTROS</span>
                         <div class="output-value accent">100%</div>
-                        <p class="output-desc">Persistencia en tiempo real en Supabase, eliminando el riesgo de extravío de fichas físicas.</p>
+                        <p class="output-desc" data-i18n="roi-card4-desc">Persistencia en tiempo real en Supabase, eliminando el riesgo de extravío de fichas físicas.</p>
                     </div>
                 </div>
             </div>
@@ -165,59 +170,59 @@
 
     <!-- SECTION 3: CORE OPERATIONAL PHILOSOPHY -->
     <section id="filosofia" class="container">
-        <div class="section-meta">PRINCIPIOS DE INGENIERÍA</div>
+        <div class="section-meta" data-i18n="phil-meta">PRINCIPIOS DE INGENIERÍA</div>
         <div class="section-header">
-            <h2>Mi Filosofía de <span>Resolución</span></h2>
-            <p>Pilares lógicos en los que se basan mis desarrollos para asegurar alta confiabilidad y retorno de negocio.</p>
+            <h2 data-i18n="phil-title">Mi Filosofía de <span>Resolución</span></h2>
+            <p class="hero-lead" data-i18n="phil-lead">Pilares lógicos en los que se basan mis desarrollos para asegurar alta confiabilidad y retorno de negocio.</p>
         </div>
 
         <div class="philosophy-grid">
             <div class="philosophy-card">
                 <div class="card-icon">01</div>
-                <h3>Integridad Transaccional</h3>
-                <p>Prevención activa de duplicados, colisiones y sobreventas de recursos mediante el diseño cuidadoso de bases de datos relacionales concurrentes y bloqueos lógicos en PostgreSQL.</p>
+                <h3 data-i18n="phil-card1-title">Integridad Transaccional</h3>
+                <p data-i18n="phil-card1-desc">Prevención activa de duplicados, colisiones y sobreventas de recursos mediante el diseño cuidadoso de bases de datos relacionales concurrentes y bloqueos lógicos en PostgreSQL.</p>
             </div>
             <div class="philosophy-card">
                 <div class="card-icon">02</div>
-                <h3>Trazabilidad y Cumplimiento</h3>
-                <p>Auditoría digital completa de flujos de valor. Automatización de firmas legales, reportes y generación dinámica de documentos PDF para eliminar el error humano y la carga administrativa.</p>
+                <h3 data-i18n="phil-card2-title">Trazabilidad y Cumplimiento</h3>
+                <p data-i18n="phil-card2-desc">Auditoría digital completa de flujos de valor. Automatización de firmas legales, reportes y generación dinámica de documentos PDF para eliminar el error humano y la carga administrativa.</p>
             </div>
             <div class="philosophy-card">
                 <div class="card-icon">03</div>
-                <h3>Cero Papel & Sostenibilidad</h3>
-                <p>Reemplazo total de libros manuscritos por formularios digitales adaptados a dispositivos móviles, optimizando la comunicación interna en tiempo real entre departamentos operativos.</p>
+                <h3 data-i18n="phil-card3-title">Cero Papel & Sostenibilidad</h3>
+                <p data-i18n="phil-card3-desc">Reemplazo total de libros manuscritos por formularios digitales adaptados a dispositivos móviles, optimizando la comunicación interna en tiempo real entre departamentos operativos.</p>
             </div>
             <div class="philosophy-card">
                 <div class="card-icon">04</div>
-                <h3>Pragmatismo Técnico</h3>
-                <p>Selección estricta de stacks tecnológicos modernos y estables (React.js, Node.js, Supabase, Django) orientada a la velocidad de carga, la solidez estructural y la facilidad de mantenimiento.</p>
+                <h3 data-i18n="phil-card4-title">Pragmatismo Técnico</h3>
+                <p data-i18n="phil-card4-desc">Selección estricta de stacks tecnológicos modernos y estables (React.js, Node.js, Supabase, Django) orientada a la velocidad de carga, la solidez estructural y la facilidad de mantenimiento.</p>
             </div>
         </div>
     </section>
 
     <!-- SECTION 4: PROFESSIONAL LOG (CV Timeline) -->
     <section id="experiencia" class="container dark-section">
-        <div class="section-meta">HISTORIAL DE LOGROS</div>
+        <div class="section-meta" data-i18n="exp-meta">HISTORIAL DE LOGROS</div>
         <div class="section-header">
-            <h2>Experiencia <span>Profesional</span></h2>
-            <p>Estructuración de mi carrera orientada al desarrollo de software y digitalización hotelera real.</p>
+            <h2 data-i18n="exp-title">Experiencia <span>Profesional</span></h2>
+            <p data-i18n="exp-lead">Estructuración de mi carrera orientada al desarrollo de software y digitalización hotelera real.</p>
         </div>
 
         <div class="timeline-wrapper">
             <div class="timeline-card">
                 <div class="timeline-header">
                     <div class="header-main">
-                        <h3>Desarrollador Full Stack &amp; Especialista en Digitalización</h3>
-                        <span class="timeline-date">2025 &mdash; Presente</span>
+                        <h3 data-i18n="exp-card1-title">Desarrollador Full Stack &amp; Especialista en Digitalización</h3>
+                        <span class="timeline-date" data-i18n="exp-card1-date">2025 &mdash; Presente</span>
                     </div>
-                    <p class="timeline-company">Los Pinos Resort & Spa Termal (Hotel 5★) &bull; Argentina</p>
+                    <p class="timeline-company" data-i18n="exp-card1-company">Los Pinos Resort & Spa Termal (Hotel 5★) &bull; Argentina</p>
                 </div>
                 <div class="timeline-body">
-                    <p class="timeline-intro">Responsable de liderar la transformación digital de la operativa interna, el desarrollo e integración de sistemas y la administración de bases de datos operativas de producción.</p>
+                    <p class="timeline-intro" data-i18n="exp-card1-intro">Responsable de liderar la transformación digital de la operativa interna, el desarrollo e integración de sistemas y la administración de bases de datos operativas de producción.</p>
                     <ul class="timeline-bullets">
-                        <li><strong>Desarrollo de ReservaSpa:</strong> Implementación del sistema web de agendamiento y turnos del spa, centralizando el control de disponibilidad de cabinas y terapeutas del resort.</li>
-                        <li><strong>Ingeniería de Lost & Found:</strong> Creación del software de inventariado y generación automática de actas de entrega en formato digital PDF, mejorando la velocidad de búsqueda de objetos en depósito.</li>
-                        <li><strong>Optimización e Integración:</strong> Migración y estructuración de bases de datos relacionales en Supabase con políticas de acceso seguro y generación dinámica de documentos.</li>
+                        <li><strong data-i18n="exp-bullet1-strong">Desarrollo de ReservaSpa:</strong> <span data-i18n="exp-bullet1-text">Implementación del sistema web de agendamiento y turnos del spa, centralizando el control de disponibilidad de cabinas y terapeutas del resort.</span></li>
+                        <li><strong data-i18n="exp-bullet2-strong">Ingeniería de Lost & Found:</strong> <span data-i18n="exp-bullet2-text">Creación del software de inventariado y generación automática de actas de entrega en formato digital PDF, mejorando la velocidad de búsqueda de objetos en depósito.</span></li>
+                        <li><strong data-i18n="exp-bullet3-strong">Optimización e Integración:</strong> <span data-i18n="exp-bullet3-text">Migración y estructuración de bases de datos relacionales en Supabase con políticas de acceso seguro y generación dinámica de documentos.</span></li>
                     </ul>
                 </div>
             </div>
@@ -225,13 +230,13 @@
             <div class="timeline-card secondary">
                 <div class="timeline-header">
                     <div class="header-main">
-                        <h3>Master en Desarrollo Full Stack</h3>
-                        <span class="timeline-date">Graduado en 2026</span>
+                        <h3 data-i18n="exp-card2-title">Master en Desarrollo Full Stack</h3>
+                        <span class="timeline-date" data-i18n="exp-card2-date">Graduado en 2026</span>
                     </div>
-                    <p class="timeline-company">Academia Conquer Blocks</p>
+                    <p class="timeline-company" data-i18n="exp-card2-company">Academia Conquer Blocks</p>
                 </div>
                 <div class="timeline-body">
-                    <p>Formación avanzada en frontend moderno (React.js, TypeScript), backend seguro (Node.js, APIs RESTful) y bases de datos relacionales avanzadas, con fuerte enfoque en proyectos reales listos para producción.</p>
+                    <p data-i18n="exp-card2-desc">Formación avanzada en frontend moderno (React.js, TypeScript), backend seguro (Node.js, APIs RESTful) y bases de datos relacionales avanzadas, con fuerte enfoque en proyectos reales listos para producción.</p>
                 </div>
             </div>
         </div>
@@ -239,28 +244,28 @@
 
     <!-- SECTION 5: CONTACT DIRECT LINK -->
     <section id="contacto" class="container">
-        <div class="section-meta">CONTACTO DIRECTO</div>
+        <div class="section-meta" data-i18n="contact-meta">CONTACTO DIRECTO</div>
         <div class="section-header">
-            <h2>Hablemos de <span>Eficiencia</span></h2>
-            <p>Estoy disponible para conversar sobre cómo aportar código de alto valor y automatización comprobada a tu organización.</p>
+            <h2 data-i18n="contact-title">Hablemos de <span>Eficiencia</span></h2>
+            <p data-i18n="contact-lead">Estoy disponible para conversar sobre cómo aportar código de alto valor y automatización comprobada a tu organización.</p>
         </div>
 
         <div class="contact-editorial-card">
             <div class="contact-text-area">
-                <h3>¿Listo para optimizar tu infraestructura operativa?</h3>
-                <p>Coordinemos una entrevista técnica. Analizaré tus flujos actuales y estructuraremos una propuesta de digitalización robusta.</p>
+                <h3 data-i18n="contact-card-title">¿Listo para optimizar tu infraestructura operativa?</h3>
+                <p data-i18n="contact-card-desc">Coordinemos una entrevista técnica. Analizaré tus flujos actuales y estructuraremos una propuesta de digitalización robusta.</p>
             </div>
             <div class="contact-links-area">
                 <a href="https://wa.me/5493424624840" target="_blank" class="contact-link-row">
-                    <span class="link-label">WHATSAPP / TELÉFONO</span>
+                    <span class="link-label" data-i18n="contact-link1-label">WHATSAPP / TELÉFONO</span>
                     <span class="link-value">+54 9 342-4624840</span>
                 </a>
                 <a href="mailto:federicovolpintesta@gmail.com" class="contact-link-row">
-                    <span class="link-label">EMAIL DIRECTO</span>
+                    <span class="link-label" data-i18n="contact-link2-label">EMAIL DIRECTO</span>
                     <span class="link-value">federicovolpintesta@gmail.com</span>
                 </a>
                 <a href="https://www.linkedin.com/in/federico-volpintesta-675378248" target="_blank" class="contact-link-row">
-                    <span class="link-label">LINKEDIN PROFESIONAL</span>
+                    <span class="link-label" data-i18n="contact-link3-label">LINKEDIN PROFESIONAL</span>
                     <span class="link-value">linkedin.com/in/federico-volpintesta</span>
                 </a>
             </div>
@@ -268,56 +273,282 @@
     </section>
 
     <footer>
-        <p>&copy; 2026 Federico Volpintesta &bull; Desarrollador Full Stack &amp; Especialista en Digitalización.</p>
+        <p data-i18n="footer">&copy; 2026 Federico Volpintesta &bull; Desarrollador Full Stack &amp; Especialista en Digitalización.</p>
     </footer>
 
     <!-- INTERACTIVE LOGIC -->
     <script>
-        // --- 1. PROBLEM SIMULATOR DATA ---
+        // --- 1. PROBLEM SIMULATOR DATA (ES / EN) ---
         const caseStudies = {
-            spa: {
-                chaos: [
-                    "Sobreventa habitual de masajes por descoordinación telefónica interna.",
-                    "Cuadernos de reserva físicos borroneados, difíciles de auditar por administración.",
-                    "Pérdida estimada del 15% de ventas debido a la falta de disponibilidad de reserva directa online.",
-                    "Retrasos en la asignación de terapeutas y cabinas de masaje."
-                ],
-                title: "ReservaSpa Termal",
-                desc: "Sistema web de reserva a medida desarrollado para Los Pinos Resort. Sincroniza en tiempo real la reserva del huésped con la disponibilidad del terapeuta y cabina libre.",
-                tags: ["React.js", "Node.js", "PostgreSQL", "Supabase DB", "Realtime Persistence", "Responsive UI"],
-                metrics: [
-                    "Sincronización instantánea de reservas, optimizando la asignación de terapeutas y recursos del hotel.",
-                    "0% de sobreventas de terapeutas o cabinas mediante lógica de base de datos relacional.",
-                    "Visualización y control de agendas en línea para administración y recepción."
-                ]
+            es: {
+                spa: {
+                    chaos: [
+                        "Sobreventa habitual de masajes por descoordinación telefónica interna.",
+                        "Cuadernos de reserva físicos borroneados, difíciles de auditar por administración.",
+                        "Pérdida estimada del 15% de ventas debido a la falta de disponibilidad de reserva directa online.",
+                        "Retrasos en la asignación de terapeutas y cabinas de masaje."
+                    ],
+                    title: "ReservaSpa Termal",
+                    desc: "Sistema web de reserva a medida desarrollado para Los Pinos Resort. Sincroniza en tiempo real la reserva del huésped con la disponibilidad del terapeuta y cabina libre.",
+                    tags: ["React.js", "Node.js", "PostgreSQL", "Supabase DB", "Realtime Persistence", "Responsive UI"],
+                    metrics: [
+                        "Sincronización instantánea de reservas, optimizando la asignación de terapeutas y recursos del hotel.",
+                        "0% de sobreventas de terapeutas o cabinas mediante lógica de base de datos relacional.",
+                        "Visualización y control de agendas en línea para administración y recepción."
+                    ]
+                },
+                lost: {
+                    chaos: [
+                        "Planillas de Excel corruptas y duplicados para reportar objetos olvidados.",
+                        "Inseguridad legal al carecer de actas escritas de entrega y devolución de valores.",
+                        "Pérdidas de tiempo buscando en libros físicos en el depósito de Ama de Llaves.",
+                        "Falta de comunicación instantánea entre mucamas y recepción."
+                    ],
+                    title: "Lost & Found Security",
+                    desc: "Plataforma administrativa blindada que automatiza el registro de artículos encontrados, controla su ubicación en depósito y emite actas de entrega legales en formato PDF autogenerado.",
+                    tags: ["JavaScript (ES6+)", "Supabase Auth/DB", "jsPDF API", "Responsive CSS Grid", "Automated PDFs"],
+                    metrics: [
+                        "Trazabilidad completa desde el hallazgo del objeto hasta su devolución legal al huésped.",
+                        "Cero uso de planillas manuscritas redundantes en Ama de Llaves y Gobernanta.",
+                        "Generación inmediata de actas de entrega digitales en PDF autogeneradas."
+                    ]
+                }
             },
-            lost: {
-                chaos: [
-                    "Planillas de Excel corruptas y duplicados para reportar objetos olvidados.",
-                    "Inseguridad legal al carecer de actas escritas de entrega y devolución de valores.",
-                    "Pérdidas de tiempo buscando en libros físicos en el depósito de Ama de Llaves.",
-                    "Falta de comunicación instantánea entre mucamas y recepción."
-                ],
-                title: "Lost & Found Security",
-                desc: "Plataforma administrativa blindada que automatiza el registro de artículos encontrados, controla su ubicación en depósito y emite actas de entrega legales en formato PDF autogenerado.",
-                tags: ["JavaScript (ES6+)", "Supabase Auth/DB", "jsPDF API", "Responsive CSS Grid", "Automated PDFs"],
-                metrics: [
-                    "Trazabilidad completa desde el hallazgo del objeto hasta su devolución legal al huésped.",
-                    "Cero uso de planillas manuscritas redundantes en Ama de Llaves y Gobernanta.",
-                    "Generación inmediata de actas de entrega digitales en PDF autogeneradas."
-                ]
+            en: {
+                spa: {
+                    chaos: [
+                        "Frequent massage overbooking due to internal manual phone coordination errors.",
+                        "Smudged physical reservation logbooks, impossible for management to efficiently audit.",
+                        "Estimated 15% booking loss due to the lack of a direct online self-booking channel.",
+                        "Delays in allocating available therapists and massage cabins."
+                    ],
+                    title: "ReservaSpa Booking Engine",
+                    desc: "Custom-made booking web system built for Los Pinos Resort. Synchronizes guest bookings with therapist and cabin availability in real-time.",
+                    tags: ["React.js", "Node.js", "PostgreSQL", "Supabase DB", "Realtime Persistence", "Responsive UI"],
+                    metrics: [
+                        "Instant booking synchronization, optimizing therapist allocation and hotel resources.",
+                        "0% therapist or cabin double-bookings through relational database constraints.",
+                        "Online agenda management visible in real-time for reception and management."
+                    ]
+                },
+                lost: {
+                    chaos: [
+                        "Corrupted Excel spreadsheets and duplicates to report lost items found by maids.",
+                        "Legal liability risks due to the lack of signed legal lost item receipt logs.",
+                        "Hours wasted searching through handwritten books in the Housekeeping deposit.",
+                        "Lack of direct, instant communication between housekeeping and reception."
+                    ],
+                    title: "Lost & Found Security Console",
+                    desc: "Secure administration platform automating housekeeping discovery logs, tracking storage location, and autogenerating legal PDF receipt logs.",
+                    tags: ["JavaScript (ES6+)", "Supabase Auth/DB", "jsPDF API", "Responsive CSS Grid", "Automated PDFs"],
+                    metrics: [
+                        "Full digital traceability from item discovery to legal return receipt to the guest.",
+                        "Zero redundant handwritten logs in Reception and Housekeeping.",
+                        "Immediate autogenerated legal PDF receipt logs."
+                    ]
+                }
             }
         };
 
+        // --- 2. DICTIONARY OF STATIC TRANSLATIONS ---
+        const staticTranslations = {
+            es: {
+                "nav-cases": "Casos de Éxito",
+                "nav-roi": "Estimador de ROI",
+                "nav-philosophy": "Filosofía",
+                "nav-experience": "Experiencia",
+                "nav-connect": "Conectar →",
+                "hero-meta": "FULL STACK DEVELOPER &bull; ESPECIALISTA EN DIGITALIZACIÓN",
+                "hero-title": "Ingeniería de Software orientada a <span>Resolver Problemas</span> de Negocio.",
+                "hero-lead": "Diseño e implemento arquitecturas web de alto rendimiento que digitalizan flujos operativos y erradican cuellos de botella reales en la industria hotelera de primer nivel.",
+                "hero-btn-primary": "Explorar Casos",
+                "hero-btn-secondary": "Descargar CV (PDF ATS)",
+                "casos-meta": "SOLUCIONES EN PRODUCCIÓN",
+                "casos-title": "Casos de <span>Impacto Real</span>",
+                "casos-lead": "Estructuración técnica de ineficiencias graves detectadas en Los Pinos Resort (5★) y las plataformas desplegadas para erradicarlas.",
+                "tab-spa": "ReservaSpa &mdash; Gestión de Turnos",
+                "tab-lost": "Lost & Found &mdash; Seguridad y Control",
+                "chaos-tag": "EL DESAFÍO OPERATIVO",
+                "chaos-title": "Ineficiencia y Fricción",
+                "solution-tag": "SOLUCIÓN DE INGENIERÍA",
+                "results-label": "RETORNO DE INVERSIÓN VERIFICADO:",
+                "roi-meta": "ANÁLISIS FINANCIERO",
+                "roi-title": "Estimador de <span>Eficiencia & Ahorro</span>",
+                "roi-lead": "Configura los parámetros operativos de tu establecimiento y visualiza el impacto inmediato proyectado de mis sistemas.",
+                "label-reservas": "Reservas de Spa / Mensuales",
+                "label-habitaciones": "Habitaciones Ocupadas / Día",
+                "roi-card1-label": "TIEMPO DE RECEPCIÓN AHORRADO",
+                "roi-card1-desc": "Horas devueltas al personal al automatizar el proceso de reserva en línea (estimado en 5 min por turno).",
+                "roi-card2-label": "CONSUMO DE PAPEL EVITADO",
+                "roi-card2-desc": "Reducción directa de papel al digitalizar las planillas de turnos y actas de objetos perdidos.",
+                "roi-card3-label": "PREVENCIÓN DE DUPLICADOS Y SOBREVENTA",
+                "roi-card3-desc": "Garantía absoluta de asignación única de terapeutas y cabinas mediante restricciones de base de datos.",
+                "roi-card4-label": "INTEGRIDAD DE REGISTROS",
+                "roi-card4-desc": "Persistencia en tiempo real en Supabase, eliminando el riesgo de extravío de fichas físicas.",
+                "phil-meta": "PRINCIPIOS DE INGENIERÍA",
+                "phil-title": "Mi Filosofía de <span>Resolución</span>",
+                "phil-lead": "Pilares lógicos en los que se basan mis desarrollos para asegurar alta confiabilidad y retorno de negocio.",
+                "phil-card1-title": "Integridad Transaccional",
+                "phil-card1-desc": "Prevención activa de duplicados, colisiones y sobreventas de recursos mediante el diseño cuidadoso de bases de datos relacionales concurrentes y bloqueos lógicos en PostgreSQL.",
+                "phil-card2-title": "Trazabilidad y Cumplimiento",
+                "phil-card2-desc": "Auditoría digital completa de flujos de valor. Automatización de firmas legales, reportes y generación dinámica de documentos PDF para eliminar el error humano y la carga administrativa.",
+                "phil-card3-title": "Cero Papel & Sostenibilidad",
+                "phil-card3-desc": "Reemplazo total de libros manuscritos por formularios digitales adaptados a dispositivos móviles, optimizando la comunicación interna en tiempo real entre departamentos operativos.",
+                "phil-card4-title": "Pragmatismo Técnico",
+                "phil-card4-desc": "Selección estricta de stacks tecnológicos modernos y estables (React.js, Node.js, Supabase, Django) orientada a la velocidad de carga, la solidez estructural y la facilidad de mantenimiento.",
+                "exp-meta": "HISTORIAL DE LOGROS",
+                "exp-title": "Experiencia <span>Profesional</span>",
+                "exp-lead": "Estructuración de mi carrera orientada al desarrollo de software y digitalización hotelera real.",
+                "exp-card1-title": "Desarrollador Full Stack &amp; Especialista en Digitalización",
+                "exp-card1-date": "2025 &mdash; Presente",
+                "exp-card1-company": "Los Pinos Resort & Spa Termal (Hotel 5★) &bull; Argentina",
+                "exp-card1-intro": "Responsable de liderar la transformación digital de la operativa interna, el desarrollo e integración de sistemas y la administración de bases de datos operativas de producción.",
+                "exp-bullet1-strong": "Desarrollo de ReservaSpa:",
+                "exp-bullet1-text": "Implementación del sistema web de agendamiento y turnos del spa, centralizando el control de disponibilidad de cabinas y terapeutas del resort.",
+                "exp-bullet2-strong": "Ingeniería de Lost & Found:",
+                "exp-bullet2-text": "Creación del software de inventariado y generación automática de actas de entrega en formato digital PDF, mejorando la velocidad de búsqueda de objetos en depósito.",
+                "exp-bullet3-strong": "Optimización e Integración:",
+                "exp-bullet3-text": "Migración y estructuración de bases de datos relacionales en Supabase con políticas de acceso seguro y generación dinámica de documentos.",
+                "exp-card2-title": "Master en Desarrollo Full Stack",
+                "exp-card2-date": "Graduado en 2026",
+                "exp-card2-company": "Academia Conquer Blocks",
+                "exp-card2-desc": "Formación avanzada en frontend moderno (React.js, TypeScript), backend seguro (Node.js, APIs RESTful) y bases de datos relacionales avanzadas, con fuerte enfoque en proyectos reales listos para producción.",
+                "contact-meta": "CONTACTO DIRECTO",
+                "contact-title": "Hablemos de <span>Eficiencia</span>",
+                "contact-lead": "Estoy disponible para conversar sobre cómo aportar código de alto valor y automatización comprobada a tu organización.",
+                "contact-card-title": "¿Listo para optimizar tu infraestructura operativa?",
+                "contact-card-desc": "Coordinemos una entrevista técnica. Analizaré tus flujos actuales y estructuraremos una propuesta de digitalización robusta.",
+                "contact-link1-label": "WHATSAPP / TELÉFONO",
+                "contact-link2-label": "EMAIL DIRECTO",
+                "contact-link3-label": "LINKEDIN PROFESIONAL",
+                "footer": "&copy; 2026 Federico Volpintesta &bull; Desarrollador Full Stack &amp; Especialista en Digitalización."
+            },
+            en: {
+                "nav-cases": "Case Studies",
+                "nav-roi": "ROI Estimator",
+                "nav-philosophy": "Philosophy",
+                "nav-experience": "Experience",
+                "nav-connect": "Connect →",
+                "hero-meta": "FULL STACK DEVELOPER &bull; DIGITALIZATION SPECIALIST",
+                "hero-title": "Software Engineering focused on <span>solving Business Problems</span>.",
+                "hero-lead": "I design and build high-performance web architectures that digitalize operational workflows and eradicate real-world bottlenecks in luxury hospitality.",
+                "hero-btn-primary": "Explore Cases",
+                "hero-btn-secondary": "Download CV (PDF ATS)",
+                "casos-meta": "SOLUTIONS IN PRODUCTION",
+                "casos-title": "Case <span>Studies</span>",
+                "casos-lead": "Technical breakdowns of operational bottlenecks identified at Los Pinos Resort (5★) and the custom platforms deployed to resolve them.",
+                "tab-spa": "ReservaSpa &mdash; Schedule Management",
+                "tab-lost": "Lost & Found &mdash; Security & Compliance",
+                "chaos-tag": "THE OPERATIONAL CHALLENGE",
+                "chaos-title": "Inefficiency & Friction",
+                "solution-tag": "ENGINEERING SOLUTION",
+                "results-label": "VERIFIED RETURN ON INVESTMENT:",
+                "roi-meta": "FINANCIAL ANALYSIS",
+                "roi-title": "Efficiency & <span>Savings Estimator</span>",
+                "roi-lead": "Configure the operational parameters of your establishment and visualize the projected immediate impact of my systems.",
+                "label-reservas": "Monthly Spa Bookings",
+                "label-habitaciones": "Occupied Rooms / Day",
+                "roi-card1-label": "RECEPTION TIME SAVED",
+                "roi-card1-desc": "Hours returned to staff by automating the online booking process (estimated at 5 min per booking).",
+                "roi-card2-label": "PAPER WASTE AVOIDED",
+                "roi-card2-desc": "Direct paper savings by digitalizing booking sheets, reports, and lost item receipt logs.",
+                "roi-card3-label": "PREVENTION OF DOUBLE-BOOKINGS",
+                "roi-card3-desc": "Guaranteed unique allocation of therapists and cabins through PostgreSQL database constraints.",
+                "roi-card4-label": "DATA RECORDS INTEGRITY",
+                "roi-card4-desc": "Real-time persistence in Supabase, eliminating the risk of losing physical logs.",
+                "phil-meta": "ENGINEERING PRINCIPLES",
+                "phil-title": "My Philosophy of <span>Resolution</span>",
+                "phil-lead": "Logical pillars on which my developments are based to ensure high reliability and business return.",
+                "phil-card1-title": "Transactional Integrity",
+                "phil-card1-desc": "Active prevention of duplicates, collisions, and resource overbooking through careful design of concurrent relational databases and logical locks in PostgreSQL.",
+                "phil-card2-title": "Traceability and Compliance",
+                "phil-card2-desc": "Full digital audit of value flows. Automation of legal signatures, reports, and dynamic generation of PDF documents to eliminate human error and administrative load.",
+                "phil-card3-title": "Zero Paper & Sustainability",
+                "phil-card3-desc": "Complete replacement of handwritten books with digital forms optimized for mobile devices, boosting real-time internal communication between operational departments.",
+                "phil-card4-title": "Technical Pragmatism",
+                "phil-card4-desc": "Strict selection of modern and stable technology stacks (React.js, Node.js, Supabase, Django) focused on load speed, structural robustness, and ease of maintenance.",
+                "exp-meta": "TRACK RECORD",
+                "exp-title": "Professional <span>Experience</span>",
+                "exp-lead": "Structuring of my career focused on software development and real-world hospitality digitalization.",
+                "exp-card1-title": "Full Stack Developer &amp; Digitalization Specialist",
+                "exp-card1-date": "2025 &mdash; Present",
+                "exp-card1-company": "Los Pinos Resort & Spa Termal (5★ Hotel) &bull; Argentina",
+                "exp-card1-intro": "Responsible for leading the digital transformation of internal operations, the development and integration of systems, and the administration of production databases.",
+                "exp-bullet1-strong": "ReservaSpa Development:",
+                "exp-bullet1-text": "Implementation of the spa booking and scheduling web system, centralizing the control of cabin and therapist availability for the resort.",
+                "exp-bullet2-strong": "Lost & Found Engineering:",
+                "exp-bullet2-text": "Creation of the inventory software and automated generation of digital PDF receipt logs, improving search speeds and tracking accuracy in deposit.",
+                "exp-bullet3-strong": "Optimization and Integration:",
+                "exp-bullet3-text": "Migration and structuring of relational databases in Supabase with secure access policies and dynamic document generation.",
+                "exp-card2-title": "Master's Degree in Full Stack Development",
+                "exp-card2-date": "Graduado en 2026",
+                "exp-card2-company": "Conquer Blocks Academy",
+                "exp-card2-desc": "Advanced training in modern frontend (React.js, TypeScript), secure backend (Node.js, RESTful APIs) and advanced relational databases, with a strong focus on production-ready projects.",
+                "contact-meta": "DIRECT CONTACT",
+                "contact-title": "Let's Talk about <span>Efficiency</span>",
+                "contact-lead": "I am available to discuss how to bring high-value code and proven automation to your organization.",
+                "contact-card-title": "Ready to optimize your operational infrastructure?",
+                "contact-card-desc": "Let's coordinate a technical interview. I will analyze your current workflows and structure a robust digitalization proposal.",
+                "contact-link1-label": "WHATSAPP / PHONE",
+                "contact-link2-label": "DIRECT EMAIL",
+                "contact-link3-label": "PROFESSIONAL LINKEDIN",
+                "footer": "&copy; 2026 Federico Volpintesta &bull; Full Stack Developer &amp; Digitalization Specialist."
+            }
+        };
+
+        // --- 3. DYNAMIC TRANSLATION ENGINE ---
+        let currentLang = 'es';
         const tabButtons = document.querySelectorAll('.tab-button');
         const chaosList = document.getElementById('chaosList');
         const solutionTitle = document.getElementById('solutionTitle');
         const solutionDesc = document.getElementById('solutionDesc');
         const archTags = document.getElementById('archTags');
         const metricsList = document.getElementById('metricsList');
+        const downloadCVBtn = document.getElementById('downloadCVBtn');
 
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('preferred-lang', lang);
+
+            // Toggle active switcher visual state
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+
+            // Translate static elements that have data-i18n
+            document.querySelectorAll('[data-i18n]').forEach(elem => {
+                const key = elem.getAttribute('data-i18n');
+                if (staticTranslations[lang][key]) {
+                    elem.innerHTML = staticTranslations[lang][key];
+                }
+            });
+
+            // Update PDF Download button href dynamically
+            if (lang === 'en') {
+                downloadCVBtn.setAttribute('href', 'FEDEVOLPINTESTADEVELOPER_EN.pdf');
+                downloadCVBtn.setAttribute('download', 'FEDEVOLPINTESTADEVELOPER_EN.pdf');
+            } else {
+                downloadCVBtn.setAttribute('href', 'FEDEVOLPINTESTADEVELOPER_OPTIMIZADO.pdf');
+                downloadCVBtn.setAttribute('download', 'FEDEVOLPINTESTADEVELOPER_OPTIMIZADO.pdf');
+            }
+
+            // Refresh Active Simulator content
+            const activeTab = document.querySelector('.tab-button.active');
+            if (activeTab) {
+                renderCase(activeTab.getAttribute('data-case'));
+            }
+
+            // Refresh Calculator units formatting
+            calculateROI();
+        }
+
+        // Simulator rendering based on active language
         function renderCase(caseKey) {
-            const data = caseStudies[caseKey];
+            const data = caseStudies[currentLang][caseKey];
             
             // Chaos Render
             chaosList.innerHTML = data.chaos.map(bullet => `
@@ -343,6 +574,14 @@
             `).join('');
         }
 
+        // Set up Switcher buttons
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                setLanguage(btn.getAttribute('data-lang'));
+            });
+        });
+
+        // Set up Tabs click handlers
         tabButtons.forEach(btn => {
             btn.addEventListener('click', () => {
                 tabButtons.forEach(b => b.classList.remove('active'));
@@ -351,10 +590,7 @@
             });
         });
 
-        // Initialize Simulator
-        renderCase('spa');
-
-        // --- 2. ROI CALCULATOR LOGIC ---
+        // --- 4. ROI CALCULATOR LOGIC ---
         const rangeReservas = document.getElementById('rangeReservas');
         const rangeHabitaciones = document.getElementById('rangeHabitaciones');
         const valReservas = document.getElementById('valReservas');
@@ -368,23 +604,51 @@
             const reservas = parseInt(rangeReservas.value);
             const habs = parseInt(rangeHabitaciones.value);
 
-            valReservas.textContent = `${reservas.toLocaleString('es-ES')} turnos`;
-            valHabitaciones.textContent = `${habs} habs`;
+            if (currentLang === 'en') {
+                valReservas.textContent = `${reservas.toLocaleString('en-US')} bookings`;
+                valHabitaciones.textContent = `${habs} rooms`;
+            } else {
+                valReservas.textContent = `${reservas.toLocaleString('es-ES')} turnos`;
+                valHabitaciones.textContent = `${habs} habs`;
+            }
 
-            // Realistic operational math formulas
-            const hoursSaved = Math.round(reservas * 5 / 60); // 5 min per reservation saved
-            const paperSheets = Math.round(reservas * 1); // 1 printed booking ticket saved per booking
+            // Factual operational metrics formulas
+            const hoursSaved = Math.round(reservas * 5 / 60); 
+            const paperSheets = Math.round(reservas * 1); 
             
-            roiHours.textContent = `${hoursSaved} hrs/mes`;
-            roiPaper.textContent = `${paperSheets.toLocaleString('es-ES')} folios/mes`;
-            roiRevenue.textContent = `100%`; // Concurrency block efficiency is always absolute due to DB constraints
+            if (currentLang === 'en') {
+                roiHours.textContent = `${hoursSaved} hrs/month`;
+                roiPaper.textContent = `${paperSheets.toLocaleString('en-US')} sheets/month`;
+            } else {
+                roiHours.textContent = `${hoursSaved} hrs/mes`;
+                roiPaper.textContent = `${paperSheets.toLocaleString('es-ES')} folios/mes`;
+            }
+            roiRevenue.textContent = `100%`;
         }
 
         rangeReservas.addEventListener('input', calculateROI);
         rangeHabitaciones.addEventListener('input', calculateROI);
 
-        // Initialize Calculator
-        calculateROI();
+        // --- 5. INITIAL STATE BOOTSTRAP ---
+        function initLanguage() {
+            // Check localStorage
+            const savedLang = localStorage.getItem('preferred-lang');
+            if (savedLang === 'es' || savedLang === 'en') {
+                setLanguage(savedLang);
+                return;
+            }
+
+            // Check browser language
+            const browserLang = navigator.language || navigator.userLanguage;
+            if (browserLang.startsWith('en')) {
+                setLanguage('en');
+            } else {
+                setLanguage('es');
+            }
+        }
+
+        // Initialize Page state
+        initLanguage();
     </script>
 </body>
 </html>
