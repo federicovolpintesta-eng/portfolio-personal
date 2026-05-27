@@ -45,7 +45,7 @@ body {
     pointer-events: none;
     background-image: 
         radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.035) 0%, transparent 70%),
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Crect x='1' y='1' width='48' height='48' fill='none' stroke='rgba%28255,255,255,0.008%29' stroke-width='0.5'/%3E%3C/svg%3E");
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Crect x='1' y='1' width='48' height='48' fill='none' stroke='%23ffffff' stroke-opacity='0.025' stroke-width='0.5'/%3E%3C/svg%3E");
     background-size: 100% 100%, 50px 50px;
 }
 
