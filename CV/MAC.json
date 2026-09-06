@@ -8,7 +8,8 @@
     "profile": {
       "name": "Federico",
       "surnames": "Volpintesta",
-      "title": "%%HEADLINE%%",
+      "title": "Full Stack Developer & Especialista en Operaciones TravelTech",
+      "description": "Desarrollador Full Stack con más de 10 años de experiencia comprobable en gestión de hospitality,\nespecializado en digitalizar y optimizar procesos operativos. Combino un profundo conocimiento del negocio\ncon habilidades técnicas modernas (React, Node.js, Python, Firebase). Enfocado en construir soluciones de\nsoftware escalables que automatizan la operación, eliminan fricciones y resuelven problemas de negocio de\nprincipio a fin, priorizando siempre la experiencia del usuario y el impacto directo en los KPIs.",
       "location": {
         "notes": "Autocompleted using Google Maps API (id: ChIJZ8b99fXKvJURqA_wKpl3Lz0)",
         "country": "Argentina"
