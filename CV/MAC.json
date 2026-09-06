@@ -25,6 +25,25 @@
       }
     ]
   },
+  "experience": {
+    "projects": [
+      {
+        "details": {
+          "name": "lostfound-hotel",
+          "description": "Sistema Integral y Modular de Gestión de Objetos Perdidos con Supabase.\n\nEste sistema reemplaza las planillas manuales tradicionales por un ecosistema digital avanzado con persistencia de datos, notificaciones en tiempo real y automatización de documentos legales de entrega. Diseñado para optimizar la operativa del hotel Los Pinos Resort & Spa Termal.",
+          "URL": "https://github.com/federicovolpintesta-eng/lostfound-hotel"
+        },
+        "type": "openSource",
+        "roles": [
+          {
+            "name": "Developer",
+            "startDate": "2026-02-01",
+            "finishDate": "2026-02-01"
+          }
+        ]
+      }
+    ]
+  },
   "knowledge": {
     "languages": [
       {
@@ -189,6 +208,11 @@
       {
         "name": "WordPress",
         "type": "technology"
+      }
+    ],
+    "projects": [
+      {
+        "name": "lostfound-hotel"
       }
     ]
   }
