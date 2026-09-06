@@ -18,6 +18,10 @@
       {
         "type": "linkedin",
         "URL": "https://www.linkedin.com/in/federico-volpintesta/"
+      },
+      {
+        "type": "github",
+        "URL": "https://github.com/federicovolpintesta-eng"
       }
     ]
   },
@@ -110,6 +114,10 @@
         {
           "URL": "https://www.linkedin.com/in/federico-volpintesta/",
           "type": "linkedin"
+        },
+        {
+          "URL": "https://github.com/federicovolpintesta-eng",
+          "type": "github"
         }
       ]
     },
